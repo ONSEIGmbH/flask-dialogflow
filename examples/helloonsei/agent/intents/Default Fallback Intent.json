@@ -1,0 +1,34 @@
+{
+  "id": "ff359663-4942-449f-aa64-18a5ed48bb44",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.unknown",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "de",
+          "speech": [
+            "Ich verstehe deine Frage leider nicht.",
+            "Entschuldige bitte, ich habe deine Frage nicht verstanden.",
+            "Ich bin nicht so sicher, ob ich dich richtig verstanden habe.",
+            "Leider kann ich nicht verstehen, was du von mir möchtest.",
+            "Kannst du das noch mal anders formulieren?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": []
+}

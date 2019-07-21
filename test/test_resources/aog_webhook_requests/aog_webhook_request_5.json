@@ -1,0 +1,105 @@
+{
+    "responseId": "cea596c3-365e-4441-b859-c9a2561de47f",
+    "queryResult": {
+        "queryText": "actions_intent_CANCEL",
+        "action": "cancel",
+        "parameters": {},
+        "allRequiredParamsPresent": true,
+        "fulfillmentMessages": [
+            {
+                "text": {
+                    "text": [
+                        ""
+                    ]
+                }
+            }
+        ],
+        "outputContexts": [
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHF8KgNatvSYnY_BLRgSFd9vZxrA9WXtzEfopHvNwlfOdRPSnySBdbXRs8c6DLFQIYSJ6tCwpNnuEJZS0-c/contexts/actions_intent_cancel"
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHF8KgNatvSYnY_BLRgSFd9vZxrA9WXtzEfopHvNwlfOdRPSnySBdbXRs8c6DLFQIYSJ6tCwpNnuEJZS0-c/contexts/actions_capability_screen_output"
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHF8KgNatvSYnY_BLRgSFd9vZxrA9WXtzEfopHvNwlfOdRPSnySBdbXRs8c6DLFQIYSJ6tCwpNnuEJZS0-c/contexts/actions_capability_audio_output"
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHF8KgNatvSYnY_BLRgSFd9vZxrA9WXtzEfopHvNwlfOdRPSnySBdbXRs8c6DLFQIYSJ6tCwpNnuEJZS0-c/contexts/google_assistant_input_type_keyboard"
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHF8KgNatvSYnY_BLRgSFd9vZxrA9WXtzEfopHvNwlfOdRPSnySBdbXRs8c6DLFQIYSJ6tCwpNnuEJZS0-c/contexts/actions_capability_media_response_audio"
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHF8KgNatvSYnY_BLRgSFd9vZxrA9WXtzEfopHvNwlfOdRPSnySBdbXRs8c6DLFQIYSJ6tCwpNnuEJZS0-c/contexts/actions_capability_web_browser"
+            }
+        ],
+        "intent": {
+            "name": "projects/bringmeister-demo/agent/intents/3684937a-4da4-4e1b-aff4-7e521185bc6c",
+            "displayName": "Cancel"
+        },
+        "intentDetectionConfidence": 1.0,
+        "languageCode": "de"
+    },
+    "originalDetectIntentRequest": {
+        "source": "google",
+        "version": "2",
+        "payload": {
+            "isInSandbox": true,
+            "surface": {
+                "capabilities": [
+                    {
+                        "name": "actions.capability.SCREEN_OUTPUT"
+                    },
+                    {
+                        "name": "actions.capability.AUDIO_OUTPUT"
+                    },
+                    {
+                        "name": "actions.capability.WEB_BROWSER"
+                    },
+                    {
+                        "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+                    }
+                ]
+            },
+            "requestType": "SIMULATOR",
+            "inputs": [
+                {
+                    "rawInputs": [
+                        {
+                            "query": "cancel",
+                            "inputType": "KEYBOARD"
+                        }
+                    ],
+                    "intent": "actions.intent.CANCEL"
+                }
+            ],
+            "user": {
+                "lastSeen": "2018-09-03T14:40:17Z",
+                "locale": "de-DE",
+                "userId": "ABwppHF8heR3W9bOMqasGRWQSJBqViGQ4VwfiQ70LZqKnpWo_7nZAv22clTLTKSI-3iouxZA_ERdmfo1O1BsjWo"
+            },
+            "conversation": {
+                "conversationId": "ABwppHF8KgNatvSYnY_BLRgSFd9vZxrA9WXtzEfopHvNwlfOdRPSnySBdbXRs8c6DLFQIYSJ6tCwpNnuEJZS0-c",
+                "type": "ACTIVE",
+                "conversationToken": "[]"
+            },
+            "availableSurfaces": [
+                {
+                    "capabilities": [
+                        {
+                            "name": "actions.capability.SCREEN_OUTPUT"
+                        },
+                        {
+                            "name": "actions.capability.AUDIO_OUTPUT"
+                        },
+                        {
+                            "name": "actions.capability.WEB_BROWSER"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "session": "projects/bringmeister-demo/agent/sessions/ABwppHF8KgNatvSYnY_BLRgSFd9vZxrA9WXtzEfopHvNwlfOdRPSnySBdbXRs8c6DLFQIYSJ6tCwpNnuEJZS0-c"
+}

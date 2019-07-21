@@ -1,0 +1,12 @@
+# .coveragerc to control coverage.py
+#
+# Run 'coverage run -m unittest discover' to run all unit test and analyze test
+# coverage, then 'coverage report' for a quick report on the command line or
+# 'coverage html' for a detailed html report (written to htmlcov/).
+
+[run]
+source = onsei_google
+branch = True
+
+[report]
+precision = 2

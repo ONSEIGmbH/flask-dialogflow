@@ -1,0 +1,754 @@
+{
+    "responseId": "74189c54-ef48-42ca-b452-cc21c231cb7f",
+    "queryResult": {
+        "intent": {
+            "name": "projects/bringmeister-demo/agent/intents/bec38724-3be6-4429-9c72-5a5be953cde4",
+            "displayName": "SelectProductScreen",
+            "webhookState": null
+        },
+        "languageCode": "de",
+        "allRequiredParamsPresent": true,
+        "queryText": "actions_intent_OPTION",
+        "speechRecognitionConfidence": null,
+        "action": "select_product_screen",
+        "parameters": {},
+        "fulfillmentText": null,
+        "fulfillmentMessages": [
+            {
+                "text": {
+                    "text": [
+                        ""
+                    ]
+                }
+            }
+        ],
+        "webhookSource": null,
+        "webhookPayload": null,
+        "outputContexts": [
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc/contexts/google_assistant_input_type_touch",
+                "lifespanCount": null,
+                "parameters": null
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc/contexts/product_search",
+                "lifespanCount": null,
+                "parameters": {
+                    "product_search": {
+                        "products": [
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/7670180071/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/7670180071/1/117.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/7670180071/1/120.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/7670180071/1/43.jpg"
+                                    }
+                                },
+                                "browserUrl": "arla-kaergarden-ungesalz-250g.html",
+                                "name": "Arla Kærgarden Butter ungesalzen",
+                                "id": "90150",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 2.39,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "sku": "7670180071",
+                                "prices": {
+                                    "baseUnit": "100g",
+                                    "price": 2.39,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 0.96
+                                },
+                                "packing": "250g Packung"
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/2423640031/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/2423640031/1/117.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/2423640031/1/120.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/2423640031/1/43.jpg"
+                                    }
+                                },
+                                "browserUrl": "golden-toa-butter-toast-500g.html",
+                                "name": "Golden Toast Butter-Toast",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 1.29,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "id": "86217",
+                                "packing": "500g Packung",
+                                "sku": "2423640031",
+                                "prices": {
+                                    "baseUnit": "1kg",
+                                    "price": 1.29,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 2.58
+                                }
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/31237510021/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/31237510021/1/117.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/31237510021/1/43.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/31237510021/1/120.jpg"
+                                    }
+                                },
+                                "browserUrl": "e-irische-butter-250g.html",
+                                "name": "EDEKA Irische Butter",
+                                "id": "82503",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 2.19,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "prices": {
+                                    "baseUnit": "100g",
+                                    "price": 2.19,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 0.88
+                                },
+                                "packing": "250g Packung",
+                                "sku": "31237510021"
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/7670160011/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/7670160011/1/117.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/7670160011/1/120.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/7670160011/1/43.jpg"
+                                    }
+                                },
+                                "browserUrl": "arla-kaergarden-gesalzen-250g-90164.html",
+                                "name": "Arla Kærgården Butter gesalzen",
+                                "id": "90149",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 2.39,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "packing": "250g Packung",
+                                "sku": "7670160011",
+                                "prices": {
+                                    "baseUnit": "100g",
+                                    "price": 2.39,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 0.96
+                                }
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/1464430081/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/1464430081/1/117.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/1464430081/1/43.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/1464430081/1/120.jpg"
+                                    }
+                                },
+                                "browserUrl": "weih-butter-250g.html",
+                                "name": "Weihenstephan Butter streichzart",
+                                "id": "85431",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 2.49,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "packing": "250g Packung",
+                                "sku": "1464430081",
+                                "prices": {
+                                    "baseUnit": "100g",
+                                    "price": 2.49,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 1.0
+                                }
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/32504020041/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/32504020041/1/117.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/32504020041/1/120.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/32504020041/1/43.jpg"
+                                    }
+                                },
+                                "browserUrl": "g-g-buttergemuse-300g.html",
+                                "name": "GUT&GÜNSTIG Buttergemüse",
+                                "id": "100221",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 0.49,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "prices": {
+                                    "baseUnit": "1kg",
+                                    "price": 0.49,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 1.63
+                                },
+                                "packing": "300g Packung",
+                                "sku": "32504020041"
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/13003400051/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/13003400051/1/117.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/13003400051/1/120.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/13003400051/1/43.jpg"
+                                    }
+                                },
+                                "browserUrl": "g-g-reine-buttermilch-500g.html",
+                                "name": "GUT&GÜNSTIG Reine Buttermilch max. 1% Fett",
+                                "id": "81723",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 0.39,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "packing": "500g Packung",
+                                "sku": "13003400051",
+                                "prices": {
+                                    "baseUnit": "1kg",
+                                    "price": 0.39,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 0.78
+                                }
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/14357510061/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/14357510061/1/117.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/14357510061/1/43.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/14357510061/1/120.jpg"
+                                    }
+                                },
+                                "browserUrl": "e-france-croissants-6x60g.html",
+                                "name": "EDEKA La France Butter-Croissants",
+                                "id": "81851",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 2.49,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "prices": {
+                                    "baseUnit": "1kg",
+                                    "price": 2.49,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 6.92
+                                },
+                                "packing": "360g Packung",
+                                "sku": "14357510061"
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/1213860071/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/1213860071/1/117.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/1213860071/1/43.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/1213860071/1/120.jpg"
+                                    }
+                                },
+                                "browserUrl": "leibniz-butterkeks-200g.html",
+                                "name": "Leibniz Butterkekse",
+                                "id": "83897",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 0.99,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "sku": "1213860071",
+                                "prices": {
+                                    "baseUnit": "100g",
+                                    "price": 0.99,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 0.5
+                                },
+                                "packing": "200g Packung"
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/27434070031/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/27434070031/1/117.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/27434070031/1/43.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/27434070031/1/120.jpg"
+                                    }
+                                },
+                                "browserUrl": "m-bra-beste-butter-250g.html",
+                                "name": "Mark Brandenburg Beste Butter",
+                                "id": "86876",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 2.29,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "prices": {
+                                    "baseUnit": "100g",
+                                    "price": 2.29,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 0.92
+                                },
+                                "packing": "250g Packung",
+                                "sku": "27434070031"
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/13208150081/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/13208150081/1/117.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/13208150081/1/43.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/13208150081/1/120.jpg"
+                                    }
+                                },
+                                "browserUrl": "g-g-butterspritzgeback-400g.html",
+                                "name": "GUT&GÜNSTIG Butter-Spritzgebäck",
+                                "id": "82173",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 1.49,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "prices": {
+                                    "baseUnit": "1kg",
+                                    "price": 1.49,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 3.73
+                                },
+                                "packing": "400g Packung",
+                                "sku": "13208150081"
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/20675130001/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/20675130001/1/117.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/20675130001/1/120.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/20675130001/1/43.jpg"
+                                    }
+                                },
+                                "browserUrl": "muller-reine-buttermilch-500g-85799.html",
+                                "name": "Müller Reine Buttermilch max. 1% Fett",
+                                "id": "85783",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 0.79,
+                                        "name": "Flasche",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "sku": "20675130001",
+                                "prices": {
+                                    "baseUnit": "1kg",
+                                    "price": 0.79,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 1.58
+                                },
+                                "packing": "500ml Flasche"
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/13977910031/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/13977910031/1/117.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/13977910031/1/43.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/13977910031/1/120.jpg"
+                                    }
+                                },
+                                "browserUrl": "bio-e-rahmbutterkase-50-150g.html",
+                                "name": "EDEKA Bio Rahm-Butterkäse in Scheiben, 50 % Fett i. Tr.",
+                                "id": "92428",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 1.79,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "prices": {
+                                    "baseUnit": "100g",
+                                    "price": 1.79,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 1.19
+                                },
+                                "packing": "150g Packung",
+                                "sku": "13977910031"
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/1472520071/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/1472520071/1/117.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/1472520071/1/120.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/1472520071/1/43.jpg"
+                                    }
+                                },
+                                "browserUrl": "bonbel-schei-butt-kas-50-100g.html",
+                                "name": "Bonbel Butter-Käse, 50 % Fett i. Tr.",
+                                "id": "84732",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 1.79,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "packing": "100g Packung",
+                                "sku": "1472520071",
+                                "prices": {
+                                    "baseUnit": "100g",
+                                    "price": 1.79,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 1.79
+                                }
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/15825960061/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/15825960061/1/117.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/15825960061/1/120.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/15825960061/1/43.jpg"
+                                    }
+                                },
+                                "browserUrl": "kerrygold-original-irische-butter-gesalzen-250g.html",
+                                "name": "Kerrygold Original Irische Butter gesalzen",
+                                "id": "96274",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 2.39,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "prices": {
+                                    "baseUnit": "100g",
+                                    "price": 2.39,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 0.96
+                                },
+                                "packing": "250g Packung",
+                                "sku": "15825960061"
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/7673090001/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/7673090001/1/117.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/7673090001/1/43.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/7673090001/1/120.jpg"
+                                    }
+                                },
+                                "browserUrl": "presid-mot-butter-meersal-250g.html",
+                                "name": "Président Meersalz Butter 80% Fett",
+                                "id": "88872",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 2.99,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "prices": {
+                                    "baseUnit": "100g",
+                                    "price": 2.99,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 1.2
+                                },
+                                "packing": "250g Packung",
+                                "sku": "7673090001"
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/8780590071/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/8780590071/1/117.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/8780590071/1/43.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/8780590071/1/120.jpg"
+                                    }
+                                },
+                                "browserUrl": "bio-e-buttergemuse-300g.html",
+                                "name": "EDEKA Bio Buttergemüse",
+                                "id": "82755",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 1.39,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "prices": {
+                                    "baseUnit": "1kg",
+                                    "price": 1.39,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 4.63
+                                },
+                                "packing": "300g Packung",
+                                "sku": "8780590071"
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/10018040001/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/10018040001/1/117.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/10018040001/1/43.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/10018040001/1/120.jpg"
+                                    }
+                                },
+                                "browserUrl": "butaris-butterschmalz-250g.html",
+                                "name": "Butaris Butterschmalz 99,8% Fett",
+                                "id": "85277",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 3.29,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "packing": "250g Packung",
+                                "sku": "10018040001",
+                                "prices": {
+                                    "baseUnit": "100g",
+                                    "price": 3.29,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 1.32
+                                }
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/1311720071/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/1311720071/1/117.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/1311720071/1/120.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/1311720071/1/43.jpg"
+                                    }
+                                },
+                                "browserUrl": "barn-best-erdn-creme-crem-350g.html",
+                                "name": "Barney's Best Creamy Peanut Butter",
+                                "id": "85175",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 2.49,
+                                        "name": "Glas",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "sku": "1311720071",
+                                "prices": {
+                                    "baseUnit": "1kg",
+                                    "price": 2.49,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 7.11
+                                },
+                                "packing": "350g Glas"
+                            },
+                            {
+                                "images": {
+                                    "list": {
+                                        "90": "//assets.bringmeister.de/media/external/G/1756340001/1/90.jpg",
+                                        "117": "//assets.bringmeister.de/media/external/G/1756340001/1/117.jpg",
+                                        "43": "//assets.bringmeister.de/media/external/G/1756340001/1/43.jpg",
+                                        "120": "//assets.bringmeister.de/media/external/G/1756340001/1/120.jpg"
+                                    }
+                                },
+                                "browserUrl": "sonja-pflanzenmargarine-250g.html",
+                                "name": "Sonja mit feinem Butter Aroma",
+                                "id": "93925",
+                                "units": [
+                                    {
+                                        "default": true,
+                                        "price": 0.49,
+                                        "name": "Packung",
+                                        "id": 57.0
+                                    }
+                                ],
+                                "prices": {
+                                    "baseUnit": "100g",
+                                    "price": 0.49,
+                                    "deposit": 0.0,
+                                    "specialDiscount": 0.0,
+                                    "basePrice": 0.2
+                                },
+                                "packing": "250g Packung",
+                                "sku": "1756340001"
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc/contexts/actions_capability_screen_output",
+                "lifespanCount": null,
+                "parameters": null
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc/contexts/actions_intent_option",
+                "lifespanCount": null,
+                "parameters": {
+                    "OPTION": "3"
+                }
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc/contexts/actions_capability_audio_output",
+                "lifespanCount": null,
+                "parameters": null
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc/contexts/actions_capability_media_response_audio",
+                "lifespanCount": null,
+                "parameters": null
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc/contexts/actions_capability_web_browser",
+                "lifespanCount": null,
+                "parameters": null
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc/contexts/current_request",
+                "lifespanCount": null,
+                "parameters": {
+                    "current_request": {
+                        "unit": null,
+                        "amount": null,
+                        "product": "Butter",
+                        "brand": null
+                    }
+                }
+            }
+        ],
+        "intentDetectionConfidence": 1.0,
+        "diagnosticInfo": null
+    },
+    "originalDetectIntentRequest": {
+        "source": "google",
+        "version": "2",
+        "payload": {
+            "isInSandbox": true,
+            "surface": {
+                "capabilities": [
+                    {
+                        "name": "actions.capability.AUDIO_OUTPUT"
+                    },
+                    {
+                        "name": "actions.capability.WEB_BROWSER"
+                    },
+                    {
+                        "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+                    },
+                    {
+                        "name": "actions.capability.SCREEN_OUTPUT"
+                    }
+                ]
+            },
+            "requestType": "SIMULATOR",
+            "inputs": [
+                {
+                    "rawInputs": [
+                        {
+                            "query": "Arla Kærgården Butter gesalzen",
+                            "inputType": "TOUCH"
+                        }
+                    ],
+                    "arguments": [
+                        {
+                            "textValue": "3",
+                            "name": "OPTION"
+                        }
+                    ],
+                    "intent": "actions.intent.OPTION"
+                }
+            ],
+            "user": {
+                "lastSeen": "2018-10-02T19:30:26Z",
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImRkYWI4NDBiNmUyMWFmMTNiN2UyNWUzNjFkMTc1YzlkYjMxNjRmYWU3ZjJjOTRiYzU2MGE1NzI1MzlmOWM5OWZkNTg1MGQ4MjYyYzY1MzYwIn0.eyJhdWQiOiI3NzA0NDViNS0yMzhkLTQwMzMtOTQ4ZS0zZDY5NGE4Yjg0YTEiLCJqdGkiOiJkZGFiODQwYjZlMjFhZjEzYjdlMjVlMzYxZDE3NWM5ZGIzMTY0ZmFlN2YyYzk0YmM1NjBhNTcyNTM5ZjljOTlmZDU4NTBkODI2MmM2NTM2MCIsImlhdCI6MTUzODEzNDQzMCwibmJmIjoxNTM4MTM0NDMwLCJleHAiOjE1Njk2NzA0MzAsInN1YiI6Ijg2ODBhMTEyLWQxZGEtNDdkZC1iMGQ4LTRlMWJkY2RkMjViNCIsInNjb3BlcyI6W119.NvcUT-Fw9fXcRT11WQdXma-i9xz5HWDiot5nRpO_PdcBy_bFeWNE-PlVTWgDsgU8WXhtnftDA3J12cdshAXv1kDdo9NniCi93Wx7dww-f1PR2qu5FL7LtCZVgR80e2rBV7pvcVk4JUNj4EL2nt9A_5S35Y4z2JTBnRjXqZDn8n-40F-4u6UDuTI2rn37IBOCLJn7FM72orJsn5PdbUkp6DfgxjKAbiL0cWhJk7Ai6twNz9c3lm_FdlevNqZ96RAJyN5xNIRFftON91a0LF4gm7FBU2pHgLwvSjUnrf9vw3CQcxl83q9u-D5CiWT7tVuON0onXgsGGaDLeBOwnyXKwQtQv8JJBwEH9iCutA-bSM4R8rVsayZJNKgep0A85JCnzVsuPKdMvwJAFKp9P1FsaxOyqjbN34Ku1CWcjqslpDZmFkhuXL75FxRfhq1LFXdZp-Npn8JdPamlumVCNJBXGUjMvaaon8jk-bTi8Gf6207GpwFtJWXuNtvUMkAccJYWoCnkrf505plNkdj6yvOKSDcVeW_O-QN-glJ2AP351IXJt4kjnMcgxPNJS4CY01sav3Cj0sjNIybEglLnz0mdblKXVeH5htGGPW88pBmcO_vNx_lDYJxbqOFf396qKb9b71AuEdIAcTIEpPrVhfVoPrua_DIaXl9gJErNw-9lhEw",
+                "locale": "de-DE",
+                "userId": "ABwppHF8heR3W9bOMqasGRWQSJBqViGQ4VwfiQ70LZqKnpWo_7nZAv22clTLTKSI-3iouxZA_ERdmfo1O1BsjWo"
+            },
+            "conversation": {
+                "conversationId": "ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc",
+                "type": "ACTIVE",
+                "conversationToken": "[\"current_request\",\"product_search\"]"
+            },
+            "availableSurfaces": [
+                {
+                    "capabilities": [
+                        {
+                            "name": "actions.capability.AUDIO_OUTPUT"
+                        },
+                        {
+                            "name": "actions.capability.WEB_BROWSER"
+                        },
+                        {
+                            "name": "actions.capability.SCREEN_OUTPUT"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "session": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc"
+}

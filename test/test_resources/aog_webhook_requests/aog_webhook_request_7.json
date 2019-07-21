@@ -1,0 +1,110 @@
+{
+    "responseId": "8f4b3c17-4056-4f38-9386-fb69c8d9055d",
+    "queryResult": {
+        "queryText": "Einkaufswagen anzeigen",
+        "action": "get_shopping_cart",
+        "parameters": {},
+        "allRequiredParamsPresent": true,
+        "fulfillmentMessages": [
+            {
+                "text": {
+                    "text": [
+                        ""
+                    ]
+                }
+            }
+        ],
+        "outputContexts": [
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js/contexts/google_assistant_input_type_touch"
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js/contexts/actions_capability_screen_output"
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js/contexts/actions_capability_audio_output"
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js/contexts/actions_capability_web_browser"
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js/contexts/actions_capability_media_response_audio"
+            }
+        ],
+        "intent": {
+            "name": "projects/bringmeister-demo/agent/intents/567f8252-602e-4d87-bd29-777f4db86850",
+            "displayName": "ShoppingCart"
+        },
+        "intentDetectionConfidence": 0.92276734,
+        "languageCode": "de"
+    },
+    "originalDetectIntentRequest": {
+        "source": "google",
+        "version": "2",
+        "payload": {
+            "isInSandbox": true,
+            "surface": {
+                "capabilities": [
+                    {
+                        "name": "actions.capability.WEB_BROWSER"
+                    },
+                    {
+                        "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+                    },
+                    {
+                        "name": "actions.capability.SCREEN_OUTPUT"
+                    },
+                    {
+                        "name": "actions.capability.AUDIO_OUTPUT"
+                    }
+                ]
+            },
+            "requestType": "SIMULATOR",
+            "inputs": [
+                {
+                    "rawInputs": [
+                        {
+                            "query": "Einkaufswagen anzeigen",
+                            "inputType": "TOUCH"
+                        }
+                    ],
+                    "arguments": [
+                        {
+                            "rawText": "Einkaufswagen anzeigen",
+                            "textValue": "Einkaufswagen anzeigen",
+                            "name": "text"
+                        }
+                    ],
+                    "intent": "actions.intent.TEXT"
+                }
+            ],
+            "user": {
+                "lastSeen": "2018-09-05T11:10:04Z",
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhhZDQ5MzFlZjg5N2M1YjkyMzE2OWZhNzk3ZDlkMDg0OTY1N2M0OWExYjllNjc1OWJkY2M0MDQxODgzZTQwMzIwMmM4OGUxMmQwMDI0N2EyIn0.eyJhdWQiOiI3NzA0NDViNS0yMzhkLTQwMzMtOTQ4ZS0zZDY5NGE4Yjg0YTEiLCJqdGkiOiI4YWQ0OTMxZWY4OTdjNWI5MjMxNjlmYTc5N2Q5ZDA4NDk2NTdjNDlhMWI5ZTY3NTliZGNjNDA0MTg4M2U0MDMyMDJjODhlMTJkMDAyNDdhMiIsImlhdCI6MTUzNjA2NDY1MSwibmJmIjoxNTM2MDY0NjUxLCJleHAiOjE1Njc2MDA2NTEsInN1YiI6Ijg2ODBhMTEyLWQxZGEtNDdkZC1iMGQ4LTRlMWJkY2RkMjViNCIsInNjb3BlcyI6W119.XZHDh_R3T9IptNxACMEk2DJwzSw5P4h4w17ruXBoducZa5JJos6AuCFhSrcLcwRUzRQhNwXiFh7HuDLqcnvzgDV-KvK7XFlduTtyigunW1q3esMtRpcZxHwdu-xJ4cdq5PxAIvVNey7qFHdTVyD3f6YMMwske1mflXTL3mkElQBQ-fvHOFHrJbdQMEJzjzbbWnsxAr3oMGgwQ_J2i4N0ZBt_H7ilEWhffJJS7x58ma91tHV1rJ5b8u0Lm2oVkCz4zWwyiBLbVfbG7fjrt0QpMdeRS95uLydPbVuLLhSCRzpBPlqYxcunyTf8t1TkeuO_8T2kRTb4KVZ83i9vDcsAtYQLiA6tmdl18iq2QxNexbcoNE2kl1iajbCaMVVArEoj08IakPaaoxJdh6s7kDbKXo7YQgs_BTPwM2kmCCV42RwWfLVC0ciDXTjAooh-qF52MjxcUrZ7jSFhqOV-Anh_iLTED2BiDNiWMjCaLAFUd1dppcDr79xo0VBvBD5vbSt7KeIyMT6WgYTBiVPq1Z6eucDK7gmOaKcyvMgkqVJktaMCQikd9_rGXe4Zf3Mhw0jXUr2wh4j8KXasQETjDy1IHZdQz-x1JB8SDxfW5qGjNfYUnoJjVL6fXYhlYiZxPcHRg_NHhreCrw9NGowBhhPV2DI52Toi60LHErgwNubj0f4",
+                "locale": "de-DE",
+                "userId": "ABwppHF8heR3W9bOMqasGRWQSJBqViGQ4VwfiQ70LZqKnpWo_7nZAv22clTLTKSI-3iouxZA_ERdmfo1O1BsjWo"
+            },
+            "conversation": {
+                "conversationId": "ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js",
+                "type": "ACTIVE",
+                "conversationToken": "[]"
+            },
+            "availableSurfaces": [
+                {
+                    "capabilities": [
+                        {
+                            "name": "actions.capability.WEB_BROWSER"
+                        },
+                        {
+                            "name": "actions.capability.SCREEN_OUTPUT"
+                        },
+                        {
+                            "name": "actions.capability.AUDIO_OUTPUT"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "session": "projects/bringmeister-demo/agent/sessions/ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js"
+}

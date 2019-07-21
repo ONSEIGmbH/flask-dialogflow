@@ -1,0 +1,251 @@
+{
+    "responseId": "abe48448-92a4-421e-844a-ea7b58f70805",
+    "queryResult": {
+        "queryText": "1 Packung weniger",
+        "action": "one_less",
+        "parameters": {
+            "unit": {
+                "unit-other": {
+                    "amount": 1.0,
+                    "unit": "Packung"
+                }
+            }
+        },
+        "allRequiredParamsPresent": true,
+        "fulfillmentMessages": [
+            {
+                "text": {
+                    "text": [
+                        ""
+                    ]
+                }
+            }
+        ],
+        "outputContexts": [
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js/contexts/google_assistant_input_type_touch",
+                "parameters": {
+                    "unit.original": "1 Packung",
+                    "unit": {
+                        "unit-other": {
+                            "amount": 1.0,
+                            "amount.original": "1",
+                            "amount.object": {},
+                            "unit": "Packung",
+                            "unit.original": "Packung",
+                            "unit.object": {}
+                        },
+                        "unit-other.original": "1 Packung",
+                        "unit-other.object": {}
+                    }
+                }
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js/contexts/actions_capability_screen_output",
+                "parameters": {
+                    "unit.original": "1 Packung",
+                    "unit": {
+                        "unit-other": {
+                            "amount": 1.0,
+                            "amount.original": "1",
+                            "amount.object": {},
+                            "unit": "Packung",
+                            "unit.original": "Packung",
+                            "unit.object": {}
+                        },
+                        "unit-other.original": "1 Packung",
+                        "unit-other.object": {}
+                    }
+                }
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js/contexts/actions_capability_audio_output",
+                "parameters": {
+                    "unit.original": "1 Packung",
+                    "unit": {
+                        "unit-other": {
+                            "amount": 1.0,
+                            "amount.original": "1",
+                            "amount.object": {},
+                            "unit": "Packung",
+                            "unit.original": "Packung",
+                            "unit.object": {}
+                        },
+                        "unit-other.original": "1 Packung",
+                        "unit-other.object": {}
+                    }
+                }
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js/contexts/current_product",
+                "lifespanCount": 2,
+                "parameters": {
+                    "unit.original": "1 Packung",
+                    "unit": {
+                        "unit-other": {
+                            "amount": 1.0,
+                            "amount.original": "1",
+                            "amount.object": {},
+                            "unit": "Packung",
+                            "unit.original": "Packung",
+                            "unit.object": {}
+                        },
+                        "unit-other.original": "1 Packung",
+                        "unit-other.object": {}
+                    },
+                    "current_product": {
+                        "images": {
+                            "detail": [
+                                {
+                                    "495": "//assets.bringmeister.de/media/external/D/1213070041/1/495.jpg",
+                                    "58": "//assets.bringmeister.de/media/external/D/1213070041/1/58.jpg",
+                                    "268": "//assets.bringmeister.de/media/external/D/1213070041/1/268.jpg",
+                                    "1795": "//assets.bringmeister.de/media/external/D/1213070041/1/1795.jpg",
+                                    "90": "//assets.bringmeister.de/media/external/D/1213070041/1/90.jpg"
+                                }
+                            ],
+                            "list": {
+                                "90": "//assets.bringmeister.de/media/external/G/1213070041/1/90.jpg",
+                                "117": "//assets.bringmeister.de/media/external/G/1213070041/1/117.jpg",
+                                "120": "//assets.bringmeister.de/media/external/G/1213070041/1/120.jpg",
+                                "43": "//assets.bringmeister.de/media/external/G/1213070041/1/43.jpg"
+                            }
+                        },
+                        "quantity": 2.0,
+                        "productId": 83416.0,
+                        "rowPrice": 1.98,
+                        "units": [
+                            {
+                                "default": true,
+                                "price": 0.99,
+                                "name": "Packung",
+                                "id": 57.0
+                            }
+                        ],
+                        "packing": "200g Packung",
+                        "unitTitle": "Packung",
+                        "rootCategoryId": 2589.0,
+                        "baseUnit": "100g",
+                        "price": 0.99,
+                        "name": "Haribo Saure Pommes Fruchtgummi extra sauer",
+                        "deposit": 0.0,
+                        "unitId": 57.0,
+                        "sku": "1213070041",
+                        "basePrice": 0.5
+                    }
+                }
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js/contexts/actions_capability_web_browser",
+                "parameters": {
+                    "unit.original": "1 Packung",
+                    "unit": {
+                        "unit-other": {
+                            "amount": 1.0,
+                            "amount.original": "1",
+                            "amount.object": {},
+                            "unit": "Packung",
+                            "unit.original": "Packung",
+                            "unit.object": {}
+                        },
+                        "unit-other.original": "1 Packung",
+                        "unit-other.object": {}
+                    }
+                }
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js/contexts/actions_capability_media_response_audio",
+                "parameters": {
+                    "unit.original": "1 Packung",
+                    "unit": {
+                        "unit-other": {
+                            "amount": 1.0,
+                            "amount.original": "1",
+                            "amount.object": {},
+                            "unit": "Packung",
+                            "unit.original": "Packung",
+                            "unit.object": {}
+                        },
+                        "unit-other.original": "1 Packung",
+                        "unit-other.object": {}
+                    }
+                }
+            }
+        ],
+        "intent": {
+            "name": "projects/bringmeister-demo/agent/intents/8b51b4dc-c102-4bc7-b334-457fccd765a3",
+            "displayName": "OneLess"
+        },
+        "intentDetectionConfidence": 0.96938694,
+        "languageCode": "de"
+    },
+    "originalDetectIntentRequest": {
+        "source": "google",
+        "version": "2",
+        "payload": {
+            "isInSandbox": true,
+            "surface": {
+                "capabilities": [
+                    {
+                        "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+                    },
+                    {
+                        "name": "actions.capability.WEB_BROWSER"
+                    },
+                    {
+                        "name": "actions.capability.AUDIO_OUTPUT"
+                    },
+                    {
+                        "name": "actions.capability.SCREEN_OUTPUT"
+                    }
+                ]
+            },
+            "requestType": "SIMULATOR",
+            "inputs": [
+                {
+                    "rawInputs": [
+                        {
+                            "query": "1 Packung weniger",
+                            "inputType": "TOUCH"
+                        }
+                    ],
+                    "arguments": [
+                        {
+                            "rawText": "1 Packung weniger",
+                            "textValue": "1 Packung weniger",
+                            "name": "text"
+                        }
+                    ],
+                    "intent": "actions.intent.TEXT"
+                }
+            ],
+            "user": {
+                "lastSeen": "2018-09-05T11:10:04Z",
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjhhZDQ5MzFlZjg5N2M1YjkyMzE2OWZhNzk3ZDlkMDg0OTY1N2M0OWExYjllNjc1OWJkY2M0MDQxODgzZTQwMzIwMmM4OGUxMmQwMDI0N2EyIn0.eyJhdWQiOiI3NzA0NDViNS0yMzhkLTQwMzMtOTQ4ZS0zZDY5NGE4Yjg0YTEiLCJqdGkiOiI4YWQ0OTMxZWY4OTdjNWI5MjMxNjlmYTc5N2Q5ZDA4NDk2NTdjNDlhMWI5ZTY3NTliZGNjNDA0MTg4M2U0MDMyMDJjODhlMTJkMDAyNDdhMiIsImlhdCI6MTUzNjA2NDY1MSwibmJmIjoxNTM2MDY0NjUxLCJleHAiOjE1Njc2MDA2NTEsInN1YiI6Ijg2ODBhMTEyLWQxZGEtNDdkZC1iMGQ4LTRlMWJkY2RkMjViNCIsInNjb3BlcyI6W119.XZHDh_R3T9IptNxACMEk2DJwzSw5P4h4w17ruXBoducZa5JJos6AuCFhSrcLcwRUzRQhNwXiFh7HuDLqcnvzgDV-KvK7XFlduTtyigunW1q3esMtRpcZxHwdu-xJ4cdq5PxAIvVNey7qFHdTVyD3f6YMMwske1mflXTL3mkElQBQ-fvHOFHrJbdQMEJzjzbbWnsxAr3oMGgwQ_J2i4N0ZBt_H7ilEWhffJJS7x58ma91tHV1rJ5b8u0Lm2oVkCz4zWwyiBLbVfbG7fjrt0QpMdeRS95uLydPbVuLLhSCRzpBPlqYxcunyTf8t1TkeuO_8T2kRTb4KVZ83i9vDcsAtYQLiA6tmdl18iq2QxNexbcoNE2kl1iajbCaMVVArEoj08IakPaaoxJdh6s7kDbKXo7YQgs_BTPwM2kmCCV42RwWfLVC0ciDXTjAooh-qF52MjxcUrZ7jSFhqOV-Anh_iLTED2BiDNiWMjCaLAFUd1dppcDr79xo0VBvBD5vbSt7KeIyMT6WgYTBiVPq1Z6eucDK7gmOaKcyvMgkqVJktaMCQikd9_rGXe4Zf3Mhw0jXUr2wh4j8KXasQETjDy1IHZdQz-x1JB8SDxfW5qGjNfYUnoJjVL6fXYhlYiZxPcHRg_NHhreCrw9NGowBhhPV2DI52Toi60LHErgwNubj0f4",
+                "locale": "de-DE",
+                "userId": "ABwppHF8heR3W9bOMqasGRWQSJBqViGQ4VwfiQ70LZqKnpWo_7nZAv22clTLTKSI-3iouxZA_ERdmfo1O1BsjWo"
+            },
+            "conversation": {
+                "conversationId": "ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js",
+                "type": "ACTIVE",
+                "conversationToken": "[\"current_product\"]"
+            },
+            "availableSurfaces": [
+                {
+                    "capabilities": [
+                        {
+                            "name": "actions.capability.WEB_BROWSER"
+                        },
+                        {
+                            "name": "actions.capability.AUDIO_OUTPUT"
+                        },
+                        {
+                            "name": "actions.capability.SCREEN_OUTPUT"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "session": "projects/bringmeister-demo/agent/sessions/ABwppHGImJSG9Oc-Dvw0KVS1Y1WQfANLcrW8_aFzaPQo6g29qVyveBGrTn2PxLviJXZZOOlw3a1etK5Monmo2js"
+}

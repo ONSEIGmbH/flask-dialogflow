@@ -1,0 +1,26 @@
+language: python
+
+cache: pip
+
+matrix:
+    include:
+        - python: 3.6
+          dist: trusty
+        - python: 3.7
+          dist: xenial
+    allow_failures:  # Some deps are not yet ready for 3.8
+        - python: 3.8-dev
+          dist: xenial
+
+install:
+  - pip install -r requirements.txt
+
+script:
+  - make test
+
+notifications:
+  email: false
+
+after_success:
+  - coverage run -m unittest discover
+  - coveralls

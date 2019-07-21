@@ -1,0 +1,49 @@
+[
+  {
+    "id": "f9e3feeb-4646-4aa5-adc7-248f71b2f61d",
+    "data": [
+      {
+        "text": "zeige mir ",
+        "userDefined": false
+      },
+      {
+        "text": "ein",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " berlin-bild",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1544796667
+  },
+  {
+    "id": "b8639d6f-99fa-4b1a-9954-adbc486af54e",
+    "data": [
+      {
+        "text": "zeige mir ",
+        "userDefined": false
+      },
+      {
+        "text": "ein",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " bild von ",
+        "userDefined": false
+      },
+      {
+        "text": "berlin",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 1544796667
+  }
+]

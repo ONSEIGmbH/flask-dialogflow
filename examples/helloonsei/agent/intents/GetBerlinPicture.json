@@ -1,0 +1,28 @@
+{
+  "id": "9acb2ae6-1578-4a27-a4c4-c58f427df138",
+  "name": "GetBerlinPicture",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "de",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1544796667,
+  "fallbackIntent": false,
+  "events": []
+}

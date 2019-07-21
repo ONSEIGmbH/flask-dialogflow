@@ -1,0 +1,19 @@
+[
+  {
+    "id": "224196ec-b088-4ecf-b1d8-46652b3fc275",
+    "data": [
+      {
+        "text": "welcher tag ist ",
+        "userDefined": false
+      },
+      {
+        "text": "heute",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 1543601413
+  }
+]

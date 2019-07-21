@@ -1,0 +1,115 @@
+{
+    "responseId": "b5ad2317-3847-4060-b082-20f5fd06af19",
+    "queryResult": {
+        "intent": {
+            "name": "projects/bringmeister-demo/agent/intents/55d94122-80d8-49f7-851f-8acd3def3d82",
+            "displayName": "Default Welcome Intent",
+            "webhookState": null
+        },
+        "languageCode": "de",
+        "allRequiredParamsPresent": true,
+        "queryText": "GOOGLE_ASSISTANT_WELCOME",
+        "speechRecognitionConfidence": null,
+        "action": "input.welcome",
+        "parameters": {},
+        "fulfillmentText": null,
+        "fulfillmentMessages": null,
+        "webhookSource": null,
+        "webhookPayload": null,
+        "outputContexts": [
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc/contexts/google_assistant_welcome",
+                "lifespanCount": null,
+                "parameters": null
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc/contexts/actions_capability_screen_output",
+                "lifespanCount": null,
+                "parameters": null
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc/contexts/actions_capability_audio_output",
+                "lifespanCount": null,
+                "parameters": null
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc/contexts/google_assistant_input_type_keyboard",
+                "lifespanCount": null,
+                "parameters": null
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc/contexts/actions_capability_media_response_audio",
+                "lifespanCount": null,
+                "parameters": null
+            },
+            {
+                "name": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc/contexts/actions_capability_web_browser",
+                "lifespanCount": null,
+                "parameters": null
+            }
+        ],
+        "intentDetectionConfidence": 1.0,
+        "diagnosticInfo": null
+    },
+    "originalDetectIntentRequest": {
+        "source": "google",
+        "version": "2",
+        "payload": {
+            "isInSandbox": true,
+            "surface": {
+                "capabilities": [
+                    {
+                        "name": "actions.capability.WEB_BROWSER"
+                    },
+                    {
+                        "name": "actions.capability.AUDIO_OUTPUT"
+                    },
+                    {
+                        "name": "actions.capability.SCREEN_OUTPUT"
+                    },
+                    {
+                        "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+                    }
+                ]
+            },
+            "requestType": "SIMULATOR",
+            "inputs": [
+                {
+                    "rawInputs": [
+                        {
+                            "query": "Mit Meisterbring sprechen",
+                            "inputType": "KEYBOARD"
+                        }
+                    ],
+                    "intent": "actions.intent.MAIN"
+                }
+            ],
+            "user": {
+                "lastSeen": "2018-10-02T19:30:26Z",
+                "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImRkYWI4NDBiNmUyMWFmMTNiN2UyNWUzNjFkMTc1YzlkYjMxNjRmYWU3ZjJjOTRiYzU2MGE1NzI1MzlmOWM5OWZkNTg1MGQ4MjYyYzY1MzYwIn0.eyJhdWQiOiI3NzA0NDViNS0yMzhkLTQwMzMtOTQ4ZS0zZDY5NGE4Yjg0YTEiLCJqdGkiOiJkZGFiODQwYjZlMjFhZjEzYjdlMjVlMzYxZDE3NWM5ZGIzMTY0ZmFlN2YyYzk0YmM1NjBhNTcyNTM5ZjljOTlmZDU4NTBkODI2MmM2NTM2MCIsImlhdCI6MTUzODEzNDQzMCwibmJmIjoxNTM4MTM0NDMwLCJleHAiOjE1Njk2NzA0MzAsInN1YiI6Ijg2ODBhMTEyLWQxZGEtNDdkZC1iMGQ4LTRlMWJkY2RkMjViNCIsInNjb3BlcyI6W119.NvcUT-Fw9fXcRT11WQdXma-i9xz5HWDiot5nRpO_PdcBy_bFeWNE-PlVTWgDsgU8WXhtnftDA3J12cdshAXv1kDdo9NniCi93Wx7dww-f1PR2qu5FL7LtCZVgR80e2rBV7pvcVk4JUNj4EL2nt9A_5S35Y4z2JTBnRjXqZDn8n-40F-4u6UDuTI2rn37IBOCLJn7FM72orJsn5PdbUkp6DfgxjKAbiL0cWhJk7Ai6twNz9c3lm_FdlevNqZ96RAJyN5xNIRFftON91a0LF4gm7FBU2pHgLwvSjUnrf9vw3CQcxl83q9u-D5CiWT7tVuON0onXgsGGaDLeBOwnyXKwQtQv8JJBwEH9iCutA-bSM4R8rVsayZJNKgep0A85JCnzVsuPKdMvwJAFKp9P1FsaxOyqjbN34Ku1CWcjqslpDZmFkhuXL75FxRfhq1LFXdZp-Npn8JdPamlumVCNJBXGUjMvaaon8jk-bTi8Gf6207GpwFtJWXuNtvUMkAccJYWoCnkrf505plNkdj6yvOKSDcVeW_O-QN-glJ2AP351IXJt4kjnMcgxPNJS4CY01sav3Cj0sjNIybEglLnz0mdblKXVeH5htGGPW88pBmcO_vNx_lDYJxbqOFf396qKb9b71AuEdIAcTIEpPrVhfVoPrua_DIaXl9gJErNw-9lhEw",
+                "locale": "de-DE",
+                "userId": "ABwppHF8heR3W9bOMqasGRWQSJBqViGQ4VwfiQ70LZqKnpWo_7nZAv22clTLTKSI-3iouxZA_ERdmfo1O1BsjWo"
+            },
+            "conversation": {
+                "conversationId": "ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc",
+                "type": "NEW"
+            },
+            "availableSurfaces": [
+                {
+                    "capabilities": [
+                        {
+                            "name": "actions.capability.WEB_BROWSER"
+                        },
+                        {
+                            "name": "actions.capability.AUDIO_OUTPUT"
+                        },
+                        {
+                            "name": "actions.capability.SCREEN_OUTPUT"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "session": "projects/bringmeister-demo/agent/sessions/ABwppHHRnoa_U67LUk_Dedbm0_D_oEXv9oJdu0sABlKSbaG-Z1xZvtnDNGLd9Wt5_JcI46tjA1nGZPQ1XNYDqlc"
+}

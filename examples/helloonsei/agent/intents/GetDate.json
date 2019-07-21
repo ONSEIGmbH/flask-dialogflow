@@ -1,0 +1,28 @@
+{
+  "id": "3e8cb964-a61a-400a-9d9c-efa8161b1803",
+  "name": "GetDate",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "de",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "lastUpdate": 1543602737,
+  "fallbackIntent": false,
+  "events": []
+}

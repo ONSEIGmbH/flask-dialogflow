@@ -1,0 +1,5 @@
+# Template for the get_date action function
+#
+# Args:
+#   date (datetime.datetime): A datetime object that will be formatted as 24.12.
+get_date: Hm, es scheint dass heute der {{ date.strftime('%d.%m.') }} ist.

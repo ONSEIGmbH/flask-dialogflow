@@ -1,0 +1,98 @@
+{
+  "id": "<UNIQUE_ORDER_ID>",
+  "cart": {
+    "merchant": {
+      "id": "book_store_1",
+      "name": "Book Store"
+    },
+    "lineItems": [
+      {
+        "name": "My Memoirs",
+        "id": "memoirs_1",
+        "price": {
+          "amount": {
+            "currencyCode": "USD",
+            "nanos": 990000000,
+            "units": 3
+          },
+          "type": "ACTUAL"
+        },
+        "quantity": 1,
+        "subLines": [
+          {
+            "note": "Note from the author"
+          }
+        ],
+        "type": "REGULAR"
+      },
+      {
+        "name": "Memoirs of a person",
+        "id": "memoirs_2",
+        "price": {
+          "amount": {
+            "currencyCode": "USD",
+            "nanos": 990000000,
+            "units": 6
+          },
+          "type": "ACTUAL"
+        },
+        "quantity": 1,
+        "subLines": [
+          {
+            "note": "Special introduction by author"
+          }
+        ],
+        "type": "REGULAR"
+      },
+      {
+        "name": "Their memoirs",
+        "id": "memoirs_3",
+        "price": {
+          "amount": {
+            "currencyCode": "USD",
+            "nanos": 490000000,
+            "units": 2
+          },
+          "type": "ACTUAL"
+        },
+        "quantity": 1,
+        "subLines": [
+          {
+            "note": "foobar"
+          }
+        ],
+        "type": "REGULAR"
+      },
+      {
+        "name": "Our memoirs",
+        "id": "memoirs_4",
+        "price": {
+          "amount": {
+            "currencyCode": "USD",
+            "nanos": 0,
+            "units": 2
+          },
+          "type": "ACTUAL"
+        },
+        "quantity": 1,
+        "subLines": [
+          {
+            "note": "Special introduction by author"
+          }
+        ],
+        "type": "REGULAR"
+      }
+    ],
+    "notes": "The Memoir collection",
+    "otherItems": []
+  },
+  "otherItems": [],
+  "totalPrice": {
+    "amount": {
+      "currencyCode": "USD",
+      "nanos": 0,
+      "units": 35
+    },
+    "type": "ESTIMATE"
+  }
+}
