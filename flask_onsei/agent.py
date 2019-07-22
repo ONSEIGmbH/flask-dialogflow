@@ -630,6 +630,10 @@ class DialogflowAgent:
         webhook_request = self._df.WebhookRequest.from_json(request_payload)
         webhook_response = self._handle_request(webhook_request)
         response_body = webhook_response.to_json()
+        json_response = json.loads(response_body.get_data())
+        json_response = remove_none_val_from_dict(json_response)
+        json_response['outputContexts'] = remove_output_contexts(json_response['outputContexts'])
+        response_body.set_data(json.dumps(json_response))
         self._log_json(response_body)
         return jsonify(response_body)
 
@@ -659,10 +663,6 @@ class DialogflowAgent:
         conv = handler(conv)
         self._serialize_context_params(conv.contexts)
         webhook_response = conv.to_webhook_response()
-        json_response = json.loads(webhook_response.get_data())
-        json_response = remove_none_val_from_dict(json_response)
-        json_response['outputContexts'] = remove_output_contexts(json_response['outputContexts'])
-        webhook_response.set_data(json.dumps(json_response))
         return webhook_response
 
     def _initialize_conversation(
