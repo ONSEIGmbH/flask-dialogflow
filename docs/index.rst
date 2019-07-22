@@ -1,12 +1,12 @@
-.. ONSEI_Google documentation master file, created by
+.. flask_onsei documentation master file, created by
    sphinx-quickstart on Sat Jun 29 18:55:09 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to ONSEI_Google!
+Welcome to flask_onsei!
 ========================
 
-ONSEI_Google is a Flask extension to build `Dialogflow`_ agents. It aims to
+flask_onsei is a Flask extension to build `Dialogflow`_ agents. It aims to
 shine through the following features:
 
     * A familiar Flask extension structure that handles the mundane stuff behind
@@ -27,7 +27,7 @@ Here is a quick example:
 .. code-block:: python
 
    from flask import Flask
-   from onsei_google.agent import DialogflowAgent
+   from flask_onsei.agent import DialogflowAgent
 
    app = Flask(__name__)
    agent = DialogflowAgent(app)

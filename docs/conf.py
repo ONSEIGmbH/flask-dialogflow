@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath('.')))
 
 # -- Project information -----------------------------------------------------
 
-project = 'ONSEI_Google'
+project = 'flask_onsei'
 copyright = '2019, ONSEI GmbH'
 author = 'Georg Molau'
 

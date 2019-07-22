@@ -5,7 +5,7 @@
 # 'coverage html' for a detailed html report (written to htmlcov/).
 
 [run]
-source = onsei_google
+source = flask_onsei
 branch = True
 
 [report]

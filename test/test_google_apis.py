@@ -106,7 +106,7 @@ def _type_field_names(api_type: JSONType) -> Iterable[str]:
 
 @pytest.mark.parametrize('version', DIALOGFLOW_VERSIONS)
 def test_import_dialogflow_api(version):
-    mod_name = f'onsei_google.google_apis.dialogflow_{version}'
+    mod_name = f'flask_onsei.google_apis.dialogflow_{version}'
     mod = import_dialogflow_api(version)
     assert isinstance(mod, ModuleType)
     assert mod.__name__ == mod_name

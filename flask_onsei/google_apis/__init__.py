@@ -56,5 +56,5 @@ class GoogleType(JSONType, schema=GoogleTypeSchema):
 
 
 def import_dialogflow_api(version: str) -> ModuleType:
-    import_path = f'onsei_google.google_apis.dialogflow_{version}'
+    import_path = f'flask_onsei.google_apis.dialogflow_{version}'
     return import_module(import_path)

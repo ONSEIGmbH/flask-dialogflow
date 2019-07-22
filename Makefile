@@ -2,7 +2,7 @@
 .DEFAULT_GOAL := test
 
 
-SRC = onsei_google/
+SRC = flask_onsei/
 TESTS = test/
 
 

@@ -118,7 +118,7 @@ class DialogflowAgent:
             `templating`_ for details. The path must be relative to the Flask
             apps root_path.
         debug: Debug mode for the agent. If on, every request and response will
-            be logged as prettified JSON. Can be set via the ONSEI_GOOGLE_DEBUG
+            be logged as prettified JSON. Can be set via the flask_onsei_DEBUG
             environment variable.
         aog_user_storage_default_factory: The default factory to use for the
             user_storage of the AoG integration.
@@ -157,7 +157,7 @@ class DialogflowAgent:
         self.route = route
         self.templates_file = templates_file
 
-        self.debug = debug or os.getenv('ONSEI_GOOGLE_DEBUG')
+        self.debug = debug or os.getenv('flask_onsei_DEBUG')
         self.logger = logging.getLogger('dialogflow.agent')
         self.logger.addHandler(_create_default_handler())
         if self.debug:
