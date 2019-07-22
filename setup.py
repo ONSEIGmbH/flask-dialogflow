@@ -4,21 +4,21 @@
 
 from setuptools import setup, find_packages
 
-from onsei_google import __version__
+from flask_onsei import __version__
 
 with open('README.md') as fp:
     long_description = fp.read()
 
 
 setup(
-    name='ONSEI_Google',
+    name='flask-ONSEI',
     version=__version__,
     packages=find_packages(),
-    url='https://github.com/ONSEIGmbH/ONSEI_Google',
+    url='https://github.com/ONSEIGmbH/flask-ONSEI',
     python_requires='>3.6',
     license='Proprietary',
     author='ONSEI GmbH',
-    author_email='georg@onsei.de',
+    author_email='it@onsei.de',
     description='A helper library for Actions-on-Google/Dialogflow agents.',
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -32,7 +32,7 @@ setup(
     ],
     entry_points={
         'flask.commands': [
-            'agent=onsei_google.cli:agent_cli'
+            'agent=flask_onsei.cli:agent_cli'
         ],
     },
 )

@@ -19,7 +19,7 @@ from marshmallow.fields import (
 )
 from marshmallow_enum import EnumField
 
-from onsei_google.json import (
+from flask_onsei.json import (
     ModuleLocalNested, JSONType, JSONTypeSchema
 )
 

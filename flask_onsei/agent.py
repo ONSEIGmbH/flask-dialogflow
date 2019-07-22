@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    onsei_google.agent
+    flask_onsei.agent
     ~~~~~~~~~~~~~~~~~~
 
     This module contains everything related to the Dialogflow agent as a whole.
@@ -29,7 +29,7 @@ from typing import (
 from flask import Flask, jsonify, request
 from jinja2.loaders import ChoiceLoader
 
-from onsei_google.context import (
+from flask_onsei.context import (
     CTX_KEEP_AROUND_LIFESPAN,
     CtxT,
     Context,
@@ -42,31 +42,31 @@ from onsei_google.context import (
     SessionContext,
     make_full_ctx_name,
 )
-from onsei_google.conversation import (
+from flask_onsei.conversation import (
     V2DialogflowConversation,
     V2beta1DialogflowConversation,
 )
-from onsei_google.exceptions import (
+from flask_onsei.exceptions import (
     DialogflowAgentError,
     AmbiguousHandlerError,
     ContextClassNotSerializableError
 )
-from onsei_google.google_apis import (
+from flask_onsei.google_apis import (
     dialogflow_v2, dialogflow_v2beta1, import_dialogflow_api
 )
-from onsei_google.integrations import (
+from flask_onsei.integrations import (
     AbstractIntegrationConversation,
     IntegrationRegistry,
     IntegrationRegistryEntry
 )
-from onsei_google.integrations.actions_on_google import (
+from flask_onsei.integrations.actions_on_google import (
     V2ActionsOnGoogleDialogflowConversation,
     UserStorageDefaultFactory,
     UserStorageDeserializer,
     UserStorageSerializer,
 )
-from onsei_google.json import JSONType
-from onsei_google.templating import YamlLoaderWithRandomization
+from flask_onsei.json import JSONType
+from flask_onsei.templating import YamlLoaderWithRandomization
 
 
 DIALOGFLOW_VERSIONS = {
@@ -230,7 +230,7 @@ class DialogflowAgent:
         # app context
         if not hasattr(app, 'extensions'):
             app.extensions = {}
-        app.extensions['onsei_google'] = self
+        app.extensions['flask_onsei'] = self
 
         # Make the agent available in a flask shell
         app.shell_context_processor(self._flask_shell_context_processor)
@@ -307,7 +307,7 @@ class DialogflowAgent:
 
         .. code-block:: python
 
-            from onsei_google.integrations import GenericIntegrationConversation
+            from flask_onsei.integrations import GenericIntegrationConversation
 
             class BlinkingLightSpeakerConv(GenericIntegrationConversation):
                 # Subclass the generic conv to get the usual dict behavior
@@ -342,7 +342,7 @@ class DialogflowAgent:
 
         .. code-block:: python
 
-            from onsei_google.integrations import GenericIntegrationConversation
+            from flask_onsei.integrations import GenericIntegrationConversation
 
             class BlinkingLightSpeakerConv(GenericIntegrationConversation):
 
@@ -475,7 +475,7 @@ class DialogflowAgent:
 
             # Implement the game state class and schema
             from marshmallow.fields import Int, Str
-            from onsei_google.json import JSONType, JSONTypeSchema
+            from flask_onsei.json import JSONType, JSONTypeSchema
 
             class _GameStateSchema(JSONTypeSchema):
                 questions_answered = Int()
@@ -757,7 +757,7 @@ def build_webhook_request(
         build_webhook_request('FooIntent')
 
         # A slighly more complex request with params and context
-        from onsei_google.google_apis.dialogflow_v2 import Context
+        from flask_onsei.google_apis.dialogflow_v2 import Context
 
         build_webhook_request(
             intent='FooIntent',

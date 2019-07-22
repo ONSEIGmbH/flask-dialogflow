@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    onsei_google
+    flask_onsei
     ~~~~~~~~~~~~
 
     :copyright: (c) 2018 ONSEI GmbH

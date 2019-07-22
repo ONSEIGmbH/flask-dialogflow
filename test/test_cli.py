@@ -6,7 +6,7 @@
     :copyright: (c) 2018 ONSEI GmbH
     :license: Proprietary
 """
-from onsei_google.cli import intents, contexts, integrations
+from flask_onsei.cli import intents, contexts, integrations
 
 import pytest
 

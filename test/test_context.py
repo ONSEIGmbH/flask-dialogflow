@@ -11,7 +11,7 @@ from typing import Iterator
 
 import pytest
 
-from onsei_google.context import (
+from flask_onsei.context import (
     Context as Context,
     ContextRegistry,
     ContextRegistryEntry,
@@ -20,7 +20,7 @@ from onsei_google.context import (
     _is_full_ctx_name,
     _is_valid_ctx_display_name,
 )
-from onsei_google.exceptions import ContextNotRegisteredError
+from flask_onsei.exceptions import ContextNotRegisteredError
 
 
 class TestContext:

@@ -8,9 +8,9 @@
 """
 import pytest
 
-from onsei_google.exceptions import AmbiguousIntegrationError
-from onsei_google.google_apis.dialogflow_v2 import OriginalDetectIntentRequest
-from onsei_google.integrations import (
+from flask_onsei.exceptions import AmbiguousIntegrationError
+from flask_onsei.google_apis.dialogflow_v2 import OriginalDetectIntentRequest
+from flask_onsei.integrations import (
     AbstractIntegrationConversation,
     GenericIntegrationConversation,
     IntegrationRegistry

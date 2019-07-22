@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    onsei_google.integrations
+    flask_onsei.integrations
     ~~~~~~~~~~~~~~~~~~~~~~~~~
 
     Package for all integration-specific conversation objects.
@@ -15,9 +15,9 @@ from typing import (
     Optional, Iterator, Type, Mapping, Tuple, DefaultDict, Iterable
 )
 
-from onsei_google.exceptions import AmbiguousIntegrationError
-from onsei_google.google_apis.dialogflow_v2 import OriginalDetectIntentRequest
-from onsei_google.json import JSON
+from flask_onsei.exceptions import AmbiguousIntegrationError
+from flask_onsei.google_apis.dialogflow_v2 import OriginalDetectIntentRequest
+from flask_onsei.json import JSON
 
 
 class AbstractIntegrationConversation:

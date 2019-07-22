@@ -14,7 +14,7 @@ from enum import Enum
 from functools import partial
 from typing import Optional, Any, Dict, List
 
-from onsei_google.google_apis import (
+from flask_onsei.google_apis import (
     GoogleType,
     GoogleTypeSchema,
     Str,

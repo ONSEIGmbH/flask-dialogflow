@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    onsei_google.templating
+    flask_onsei.templating
     ~~~~~~~~~~~~~~~~~~~~~~~
 
     Tools to support templating with Jinja2.

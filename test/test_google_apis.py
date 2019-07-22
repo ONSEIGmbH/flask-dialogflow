@@ -14,8 +14,8 @@ from typing import Iterable, Type
 
 import pytest
 
-from onsei_google.agent import DIALOGFLOW_VERSIONS
-from onsei_google.google_apis import (
+from flask_onsei.agent import DIALOGFLOW_VERSIONS
+from flask_onsei.google_apis import (
     JSONType,
     JSONTypeSchema,
     actions_on_google_v2,
@@ -23,7 +23,7 @@ from onsei_google.google_apis import (
     dialogflow_v2beta1,
     import_dialogflow_api
 )
-from onsei_google.utils import fqn
+from flask_onsei.utils import fqn
 
 
 def generate_module_classes(module: ModuleType) -> Iterable[Type]:

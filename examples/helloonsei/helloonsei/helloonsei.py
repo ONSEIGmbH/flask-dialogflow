@@ -5,9 +5,9 @@
 
 from flask import Flask, render_template as __
 
-from onsei_google.agent import DialogflowAgent
-from onsei_google.conversation import V2DialogflowConversation
-from onsei_google.google_apis.actions_on_google_v2 import (
+from flask_onsei.agent import DialogflowAgent
+from flask_onsei.conversation import V2DialogflowConversation
+from flask_onsei.google_apis.actions_on_google_v2 import (
     BasicCard,
     Image,
     MediaResponse,

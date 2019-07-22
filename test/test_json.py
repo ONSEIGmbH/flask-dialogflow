@@ -12,7 +12,7 @@ from typing import Optional
 import pytest
 from marshmallow import Schema, fields
 
-from onsei_google.json import JSONType, JSONTypeSchema, ModuleLocalNested
+from flask_onsei.json import JSONType, JSONTypeSchema, ModuleLocalNested
 
 
 @pytest.fixture

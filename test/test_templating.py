@@ -13,7 +13,7 @@ from unittest.mock import Mock
 import pytest
 from jinja2 import Environment, TemplateError, TemplateNotFound
 
-from onsei_google.templating import YamlLoaderWithRandomization
+from flask_onsei.templating import YamlLoaderWithRandomization
 
 
 @pytest.fixture

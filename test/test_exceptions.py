@@ -6,14 +6,14 @@
     :copyright: (c) 2018 ONSEI GmbH
     :license: Proprietary
 """
-from onsei_google.exceptions import (
+from flask_onsei.exceptions import (
     DialogflowAgentError,
     AmbiguousHandlerError,
     AmbiguousIntegrationError,
     ContextNotRegisteredError,
     ContextClassNotSerializableError,
 )
-from onsei_google.integrations import GenericIntegrationConversation
+from flask_onsei.integrations import GenericIntegrationConversation
 
 
 def test_DialogflowAgentError():

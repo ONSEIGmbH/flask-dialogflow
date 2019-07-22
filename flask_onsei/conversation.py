@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    onsei_google.conversation
+    flask_onsei.conversation
     ~~~~~~~~~~~~~~~~~~~~~~~~~
 
     The core Dialogflow Conversation classes.
@@ -11,12 +11,12 @@
 from collections import defaultdict
 from typing import Optional, Mapping, Any, DefaultDict, List
 
-from onsei_google.context import ContextManager, SessionContext, Context
-from onsei_google.google_apis import import_dialogflow_api
-from onsei_google.integrations import (
+from flask_onsei.context import ContextManager, SessionContext, Context
+from flask_onsei.google_apis import import_dialogflow_api
+from flask_onsei.integrations import (
     AbstractIntegrationConversation, GenericIntegrationConversation
 )
-from onsei_google.integrations.actions_on_google import (
+from flask_onsei.integrations.actions_on_google import (
     V2ActionsOnGoogleDialogflowConversation
 )
 
