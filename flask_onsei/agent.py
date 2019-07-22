@@ -658,7 +658,11 @@ class DialogflowAgent:
         handler = self._lookup_conversation_handler(conv)
         conv = handler(conv)
         self._serialize_context_params(conv.contexts)
-        webhook_response = remove_none_val_from_dict(conv.to_webhook_response())
+        webhook_response = conv.to_webhook_response()
+        json_response = json.loads(webhook_response.get_data())
+        json_response = remove_none_val_from_dict(json_response)
+        json_response['outputContexts'] = remove_output_contexts(json_response['outputContexts'])
+        webhook_response.set_data(json.dumps(json_response))
         return webhook_response
 
     def _initialize_conversation(
