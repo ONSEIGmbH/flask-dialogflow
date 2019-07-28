@@ -659,7 +659,7 @@ class DialogflowAgent:
         conv = self._initialize_conversation(webhook_request)
         handler = self._lookup_conversation_handler(conv)
         conv = handler(conv)
-        if conv.contexts:
+        if conv:
             self._serialize_context_params(conv.contexts)
         webhook_response = conv.to_webhook_response()
         return webhook_response
