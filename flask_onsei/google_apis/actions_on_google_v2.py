@@ -65,8 +65,8 @@ class _UserSchema(GoogleTypeSchema):
     profile = Nested('_UserProfileSchema')
     accessToken = Str(attribute='access_token')
     permissions = ListF(Nested('_PermissionSchema'))
-    locale = Str()
-    lastSeen = DateTimeF(attribute='last_seen')
+    locale = Str(attribute='locale')
+    lastSeen = Str(attribute='last_seen')
     userStorage = Str(attribute='user_storage')
     packageEntitlements = ListF(
         Nested('_PackageEntitlementSchema'), attribute='package_entitlements'
@@ -81,7 +81,7 @@ class User(GoogleType, schema=_UserSchema):
     access_token: Optional[str] = None
     permissions: List['Permission'] = field(default_factory=list)
     locale: Optional[str] = None
-    last_seen: Optional[datetime] = None
+    last_seen: Optional[str] = None
     user_storage: Optional[str] = None
     package_entitlements: List['PackageEntitlement'] = field(
         default_factory=list
@@ -222,7 +222,7 @@ class RawInput(GoogleType, schema=_RawInputSchema):
 
 class _AppResponseSchema(GoogleTypeSchema):
     conversationToken = Str(attribute='conversation_token')
-    userStorage = Str(attribute='user_storage')
+    userStorage = Str(attribute=' user_storage')
     resetUserStorage = Bool(attribute='reset_user_storage')
     expectUserResponse = Bool(attribute='expect_user_response')
     expectedInputs = ListF(
