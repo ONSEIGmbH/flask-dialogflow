@@ -88,6 +88,38 @@ WebhookResponse = Union[
     dialogflow_v2.WebhookResponse, dialogflow_v2beta1.WebhookResponse
 ]
 
+def remove_output_contexts(data):
+    new_list = []
+    for x in data:
+        if "lifespanCount" in x and x['lifespanCount'] < 10:
+            new_list.append(x)
+        elif "lifespanCount" not in x:
+            new_list.append(x)
+    return new_list
+
+
+def remove_none_val_from_dict(data):
+    for key, value in dict(data).items():
+        # print(key)
+        # if key == 'ssml':
+        #     data['textToSpeech'] = data.pop('ssml')
+        if value is None:
+            del data[key]
+        elif type(value) is dict:
+            # print("Checking Dict: " + str(key))
+            data[key] = remove_none_val_from_dict(value)
+        elif type(value) is list and len(value) == 0:
+            # print("Removing List: " + str(key))
+            del data[key]
+        elif type(value) is list:
+            # print("Checking List: " + str(key))
+            tmp_list = []
+            for x in value:
+                if type(x) is dict:
+                    x = remove_none_val_from_dict(x)
+                    tmp_list.append(x)
+            data[key] = tmp_list
+    return data
 
 def _validate_dialogflow_version(version: str) -> None:
     if version not in DIALOGFLOW_VERSIONS:
@@ -597,6 +629,8 @@ class DialogflowAgent:
         webhook_request = self._df.WebhookRequest.from_json(request_payload)
         webhook_response = self._handle_request(webhook_request)
         response_body = webhook_response.to_json()
+        response_body = remove_none_val_from_dict(response_body)
+        response_body['outputContexts'] = remove_output_contexts(response_body['outputContexts'])
         self._log_json(response_body)
         return jsonify(response_body)
 
