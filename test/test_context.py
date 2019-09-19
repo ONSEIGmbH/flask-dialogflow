@@ -11,7 +11,7 @@ from typing import Iterator
 
 import pytest
 
-from flask_onsei.context import (
+from flask_dialogflow.context import (
     Context as Context,
     ContextRegistry,
     ContextRegistryEntry,
@@ -20,7 +20,7 @@ from flask_onsei.context import (
     _is_full_ctx_name,
     _is_valid_ctx_display_name,
 )
-from flask_onsei.exceptions import ContextNotRegisteredError
+from flask_dialogflow.exceptions import ContextNotRegisteredError
 
 
 class TestContext:

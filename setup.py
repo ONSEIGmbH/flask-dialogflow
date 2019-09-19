@@ -4,7 +4,7 @@
 
 from setuptools import setup, find_packages
 
-from flask_onsei import __version__
+from flask_dialogflow import __version__
 
 with open('README.md') as fp:
     long_description = fp.read()
@@ -32,7 +32,7 @@ setup(
     ],
     entry_points={
         'flask.commands': [
-            'agent=flask_onsei.cli:agent_cli'
+            'agent=flask_dialogflow.cli:agent_cli'
         ],
     },
 )

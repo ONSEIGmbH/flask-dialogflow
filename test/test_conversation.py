@@ -8,14 +8,14 @@
 """
 import pytest
 
-from flask_onsei.agent import DialogflowConversation
-from flask_onsei.context import ContextManager
-from flask_onsei.conversation import (
+from flask_dialogflow.agent import DialogflowConversation
+from flask_dialogflow.context import ContextManager
+from flask_dialogflow.conversation import (
     V2DialogflowConversation, V2beta1DialogflowConversation
 )
-from flask_onsei.google_apis.dialogflow_v2 import Sentiment
-from flask_onsei.integrations import GenericIntegrationConversation
-from flask_onsei.integrations.actions_on_google import (
+from flask_dialogflow.google_apis.dialogflow_v2 import Sentiment
+from flask_dialogflow.integrations import GenericIntegrationConversation
+from flask_dialogflow.integrations.actions_on_google import (
     V2ActionsOnGoogleDialogflowConversation
 )
 

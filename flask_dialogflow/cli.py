@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    flask_onsei.cli
+    flask_dialogflow.cli
     ~~~~~~~~~~~~~~~~
 
     An `agent` command group for Flasks CLI interface.
@@ -15,7 +15,7 @@ from flask.cli import AppGroup
 
 from tabulate import tabulate
 
-from flask_onsei.utils import fqn
+from flask_dialogflow.utils import fqn
 
 
 @click.group(cls=AppGroup)
@@ -31,7 +31,7 @@ def intents():
     functions.
     """
     with current_app.app_context():
-        agent = current_app.extensions['flask_onsei']
+        agent = current_app.extensions['flask_dialogflow']
         data = list(agent.list_handler())
     data.sort(key=lambda intent_handler: intent_handler[0])
     table_data = [(intent, fqn(handler)) for intent, handler in data]
@@ -47,7 +47,7 @@ def contexts():
     and whether they should be kept around.
     """
     with current_app.app_context():
-        agent = current_app.extensions['flask_onsei']
+        agent = current_app.extensions['flask_dialogflow']
         context_processors = list(agent.list_contexts())
     data = [
         (ctx.display_name, fqn(ctx.default_factory), ctx.keep_around)
@@ -66,7 +66,7 @@ def integrations():
     corresponding conversation class and its init kwargs.
     """
     with current_app.app_context():
-        agent = current_app.extensions['flask_onsei']
+        agent = current_app.extensions['flask_dialogflow']
         data = list(agent.list_integrations())
     headers = ('Integration', 'Version', 'Integration class', 'Init kwargs')
     table = tabulate(data, headers)

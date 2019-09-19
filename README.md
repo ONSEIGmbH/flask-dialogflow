@@ -1,6 +1,6 @@
-# flask_onsei
+# flask_dialogflow
 
-flask_onsei is a Flask extension to build [Dialogflow](https://dialogflow.com/)
+flask_dialogflow is a Flask extension to build [Dialogflow](https://dialogflow.com/)
 agents. It aims to shine through the following features:
 
 * A familiar Flask extension structure that handles the mundane stuff behind
@@ -18,7 +18,7 @@ Here is a quick example:
 
 ```python
 from flask import Flask
-from flask_onsei.agent import DialogflowAgent
+from flask_dialogflow.agent import DialogflowAgent
 
 app = Flask(__name__)
 agent = DialogflowAgent(app)

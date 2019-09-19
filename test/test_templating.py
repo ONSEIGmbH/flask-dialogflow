@@ -13,7 +13,7 @@ from unittest.mock import Mock
 import pytest
 from jinja2 import Environment, TemplateError, TemplateNotFound
 
-from flask_onsei.templating import YamlLoaderWithRandomization
+from flask_dialogflow.templating import YamlLoaderWithRandomization
 
 
 @pytest.fixture

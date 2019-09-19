@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    flask_onsei.context
+    flask_dialogflow.context
     ~~~~~~~~~~~~~~~~~~~~
 
     Everything related to context handling.
@@ -28,9 +28,9 @@ from typing import (
 
 from marshmallow.fields import Int
 
-from flask_onsei.exceptions import ContextNotRegisteredError
-from flask_onsei.google_apis.dialogflow_v2 import Context as Context_
-from flask_onsei.json import JSON, JSONTypeSchema, JSONType
+from flask_dialogflow.exceptions import ContextNotRegisteredError
+from flask_dialogflow.google_apis.dialogflow_v2 import Context as Context_
+from flask_dialogflow.json import JSON, JSONTypeSchema, JSONType
 
 CTX_KEEP_AROUND_LIFESPAN = 99
 

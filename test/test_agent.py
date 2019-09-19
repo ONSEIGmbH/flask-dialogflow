@@ -17,7 +17,7 @@ from flask.logging import has_level_handler
 from jinja2 import ChoiceLoader
 from marshmallow.fields import Int, Str
 
-from flask_onsei.agent import (
+from flask_dialogflow.agent import (
     DIALOGFLOW_VERSIONS,
     _validate_dialogflow_version,
     build_webhook_request,
@@ -25,25 +25,25 @@ from flask_onsei.agent import (
     TestWebhookResponse,
     _create_default_handler,
 )
-from flask_onsei.context import (
+from flask_dialogflow.context import (
     SessionContext,
     CTX_KEEP_AROUND_LIFESPAN
 )
-from flask_onsei.exceptions import (
+from flask_dialogflow.exceptions import (
     DialogflowAgentError,
     AmbiguousHandlerError,
     ContextClassNotSerializableError
 )
-from flask_onsei.google_apis.dialogflow_v2 import (
+from flask_dialogflow.google_apis.dialogflow_v2 import (
     WebhookRequest,
     WebhookResponse,
     Context,
 )
-from flask_onsei.integrations import (
+from flask_dialogflow.integrations import (
     AbstractIntegrationConversation
 )
-from flask_onsei.json import JSONType, JSONTypeSchema, JSON
-from flask_onsei.templating import YamlLoaderWithRandomization
+from flask_dialogflow.json import JSONType, JSONTypeSchema, JSON
+from flask_dialogflow.templating import YamlLoaderWithRandomization
 
 
 def test_validate_dialogflow_version_valid_version():
@@ -287,14 +287,14 @@ class TestDialogflowAgentInitFlaskApp:
 
     def test_init_app_adds_reference_to_agent(self, uninitialized_agent, app):
         uninitialized_agent.init_app(app)
-        assert app.extensions['flask_onsei'] == uninitialized_agent
+        assert app.extensions['flask_dialogflow'] == uninitialized_agent
 
     def test_init_app_creates_extensions_dict_when_necessary(
             self, uninitialized_agent, app
     ):
         del app.extensions
         uninitialized_agent.init_app(app)
-        assert app.extensions['flask_onsei'] == uninitialized_agent, \
+        assert app.extensions['flask_dialogflow'] == uninitialized_agent, \
             'Doing this is recommended by Flask'
 
     def test_flask_shell_context_processor(self, agent):

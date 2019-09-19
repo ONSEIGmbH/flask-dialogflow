@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    flask_onsei.agent
+    flask_dialogflow.agent
     ~~~~~~~~~~~~~~~~~~
 
     This module contains everything related to the Dialogflow agent as a whole.
@@ -29,7 +29,7 @@ from typing import (
 from flask import Flask, jsonify, request
 from jinja2.loaders import ChoiceLoader
 
-from flask_onsei.context import (
+from flask_dialogflow.context import (
     CTX_KEEP_AROUND_LIFESPAN,
     CtxT,
     Context,
@@ -42,31 +42,31 @@ from flask_onsei.context import (
     SessionContext,
     make_full_ctx_name,
 )
-from flask_onsei.conversation import (
+from flask_dialogflow.conversation import (
     V2DialogflowConversation,
     V2beta1DialogflowConversation,
 )
-from flask_onsei.exceptions import (
+from flask_dialogflow.exceptions import (
     DialogflowAgentError,
     AmbiguousHandlerError,
     ContextClassNotSerializableError
 )
-from flask_onsei.google_apis import (
+from flask_dialogflow.google_apis import (
     dialogflow_v2, dialogflow_v2beta1, import_dialogflow_api
 )
-from flask_onsei.integrations import (
+from flask_dialogflow.integrations import (
     AbstractIntegrationConversation,
     IntegrationRegistry,
     IntegrationRegistryEntry
 )
-from flask_onsei.integrations.actions_on_google import (
+from flask_dialogflow.integrations.actions_on_google import (
     V2ActionsOnGoogleDialogflowConversation,
     UserStorageDefaultFactory,
     UserStorageDeserializer,
     UserStorageSerializer,
 )
-from flask_onsei.json import JSONType
-from flask_onsei.templating import YamlLoaderWithRandomization
+from flask_dialogflow.json import JSONType
+from flask_dialogflow.templating import YamlLoaderWithRandomization
 
 
 DIALOGFLOW_VERSIONS = {
@@ -151,9 +151,9 @@ class DialogflowAgent:
             `templating`_ for details. The path must be relative to the Flask
             apps root_path.
         debug: Debug mode for the agent. If on, every request and response will
-            be logged as prettified JSON. Can be set via the flask_onsei_DEBUG
+            be logged as prettified JSON. Can be set via the flask_dialogflow_DEBUG
             environment variable.
-        aog_user_storage_default_factory: The default factory to use for the
+        aog_flask_dialogflow_default_factory: The default factory to use for the
             user_storage of the AoG integration.
         aog_user_storage_deserializer: The function to deserialize the
             user_storage of the AoG integration.
@@ -190,7 +190,7 @@ class DialogflowAgent:
         self.route = route
         self.templates_file = templates_file
 
-        self.debug = debug or os.getenv('flask_onsei_DEBUG')
+        self.debug = debug or os.getenv('flask_dialogflow_DEBUG')
         self.logger = logging.getLogger('dialogflow.agent')
         self.logger.addHandler(_create_default_handler())
         if self.debug:
@@ -263,7 +263,7 @@ class DialogflowAgent:
         # app context
         if not hasattr(app, 'extensions'):
             app.extensions = {}
-        app.extensions['flask_onsei'] = self
+        app.extensions['flask_dialogflow'] = self
 
         # Make the agent available in a flask shell
         app.shell_context_processor(self._flask_shell_context_processor)
@@ -340,7 +340,7 @@ class DialogflowAgent:
 
         .. code-block:: python
 
-            from flask_onsei.integrations import GenericIntegrationConversation
+            from flask_dialogflow.integrations import GenericIntegrationConversation
 
             class BlinkingLightSpeakerConv(GenericIntegrationConversation):
                 # Subclass the generic conv to get the usual dict behavior
@@ -375,7 +375,7 @@ class DialogflowAgent:
 
         .. code-block:: python
 
-            from flask_onsei.integrations import GenericIntegrationConversation
+            from flask_dialogflow.integrations import GenericIntegrationConversation
 
             class BlinkingLightSpeakerConv(GenericIntegrationConversation):
 
@@ -508,7 +508,7 @@ class DialogflowAgent:
 
             # Implement the game state class and schema
             from marshmallow.fields import Int, Str
-            from flask_onsei.json import JSONType, JSONTypeSchema
+            from flask_dialogflow.json import JSONType, JSONTypeSchema
 
             class _GameStateSchema(JSONTypeSchema):
                 questions_answered = Int()
@@ -792,7 +792,7 @@ def build_webhook_request(
         build_webhook_request('FooIntent')
 
         # A slighly more complex request with params and context
-        from flask_onsei.google_apis.dialogflow_v2 import Context
+        from flask_dialogflow.google_apis.dialogflow_v2 import Context
 
         build_webhook_request(
             intent='FooIntent',

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    flask_onsei.templating
+    flask_dialogflow.templating
     ~~~~~~~~~~~~~~~~~~~~~~~
 
     Tools to support templating with Jinja2.

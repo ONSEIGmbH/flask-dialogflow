@@ -13,7 +13,7 @@ from pathlib import Path
 import pytest
 from flask import Flask
 
-from flask_onsei.agent import (
+from flask_dialogflow.agent import (
     DialogflowAgent, DialogflowConversation, DIALOGFLOW_VERSIONS
 )
 

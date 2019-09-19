@@ -8,8 +8,8 @@
 """
 # pylint: disable=protected-access, wildcard-import, unused-wildcard-import
 # pylint: disable=function-redefined, too-many-ancestors, missing-docstring
-from flask_onsei.google_apis.dialogflow_v2 import *
-from flask_onsei.google_apis.dialogflow_v2 import (
+from flask_dialogflow.google_apis.dialogflow_v2 import *
+from flask_dialogflow.google_apis.dialogflow_v2 import (
     _WebhookRequestSchema,
     _WebhookResponseSchema,
     _MessageSchema,

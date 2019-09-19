@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    flask_onsei.conversation
+    flask_dialogflow.conversation
     ~~~~~~~~~~~~~~~~~~~~~~~~~
 
     The core Dialogflow Conversation classes.
@@ -11,12 +11,12 @@
 from collections import defaultdict
 from typing import Optional, Mapping, Any, DefaultDict, List
 
-from flask_onsei.context import ContextManager, SessionContext, Context
-from flask_onsei.google_apis import import_dialogflow_api
-from flask_onsei.integrations import (
+from flask_dialogflow.context import ContextManager, SessionContext, Context
+from flask_dialogflow.google_apis import import_dialogflow_api
+from flask_dialogflow.integrations import (
     AbstractIntegrationConversation, GenericIntegrationConversation
 )
-from flask_onsei.integrations.actions_on_google import (
+from flask_dialogflow.integrations.actions_on_google import (
     V2ActionsOnGoogleDialogflowConversation
 )
 
@@ -27,7 +27,7 @@ class V2DialogflowConversation:
     This object is the heart of this library. It represents a single turn in a
     Dialogflow conversation and is the interface to both the incomint request
     data as well as to the response construction methods. This object is
-    instantiated by flask_onsei automatically and then passed to the handler
+    instantiated by flask_dialogflow automatically and then passed to the handler
     function matched to this request. The handler function will usually
     inspect the request data in more detail, perform some business logic,
     maybe update the server-side state (contexts, user storage) and then build

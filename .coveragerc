@@ -5,7 +5,7 @@
 # 'coverage html' for a detailed html report (written to htmlcov/).
 
 [run]
-source = flask_onsei
+source = flask_dialogflow
 branch = True
 
 [report]

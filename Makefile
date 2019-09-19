@@ -2,7 +2,7 @@
 .DEFAULT_GOAL := test
 
 
-SRC = flask_onsei/
+SRC = flask_dialogflow/
 TESTS = test/
 
 

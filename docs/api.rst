@@ -3,7 +3,7 @@
 API Reference
 =============
 
-This part of the documentation covers all the interfaces of flask_onsei.
+This part of the documentation covers all the interfaces of flask_dialogflow.
 
 
 Agent object
@@ -11,7 +11,7 @@ Agent object
 
 The agent is the core object of this library.
 
-.. autoclass:: flask_onsei.agent.DialogflowAgent
+.. autoclass:: flask_dialogflow.agent.DialogflowAgent
     :members:
 
 
@@ -22,10 +22,10 @@ Conversation classes are the core abstraction of this library. They come in two
 versions for the two supported Dialogflow version, but are, except for some
 additional features in v2beta1, completely identical.
 
-.. autoclass:: flask_onsei.conversation.V2DialogflowConversation
+.. autoclass:: flask_dialogflow.conversation.V2DialogflowConversation
     :members:
 
-.. autoclass:: flask_onsei.conversation.V2beta1DialogflowConversation
+.. autoclass:: flask_dialogflow.conversation.V2beta1DialogflowConversation
     :members:
 
 
@@ -35,10 +35,10 @@ Contexts and Context Manager
 Contexts are essential to manage (Dialogflow) server side state. These tools
 help in doing that accurately.
 
-.. autoclass:: flask_onsei.context.Context
+.. autoclass:: flask_dialogflow.context.Context
     :members:
 
-.. autoclass:: flask_onsei.context.ContextManager
+.. autoclass:: flask_dialogflow.context.ContextManager
     :members:
 
 
@@ -58,10 +58,10 @@ features. It is registered for AoG requests by default.
 
 .. _Dialogflow integrations: https://cloud.google.com/dialogflow/docs/integrations/
 
-.. autoclass:: flask_onsei.integrations.AbstractIntegrationConversation
+.. autoclass:: flask_dialogflow.integrations.AbstractIntegrationConversation
     :members:
 
-.. autoclass:: flask_onsei.integrations.GenericIntegrationConversation
+.. autoclass:: flask_dialogflow.integrations.GenericIntegrationConversation
 
 
 Actions on Google Conversation object
@@ -71,10 +71,10 @@ Actions on Google is currently the only integration platform that has a custom
 conversation class. It supports advanced AoG features such as additional rich
 responses, system intents, permissions and user storage.
 
-.. autoclass:: flask_onsei.integrations.actions_on_google.V2ActionsOnGoogleDialogflowConversation
+.. autoclass:: flask_dialogflow.integrations.actions_on_google.V2ActionsOnGoogleDialogflowConversation
     :members:
 
-.. autoclass:: flask_onsei.integrations.actions_on_google.UserFacade
+.. autoclass:: flask_dialogflow.integrations.actions_on_google.UserFacade
     :members:
 
 
@@ -95,13 +95,13 @@ be used by users to implement custom context classes.
 
 .. _marshmallow: https://marshmallow.readthedocs.io/en/3.0/index.html
 
-.. autoclass:: flask_onsei.json.JSONType
+.. autoclass:: flask_dialogflow.json.JSONType
     :members:
 
-.. autoclass:: flask_onsei.json.JSONTypeSchema
+.. autoclass:: flask_dialogflow.json.JSONTypeSchema
     :members:
 
-.. autoclass:: flask_onsei.json.ModuleLocalNested
+.. autoclass:: flask_dialogflow.json.ModuleLocalNested
     :members:
 
 
@@ -115,7 +115,7 @@ loader to support YAML files with many individual templates (since speech
 responses tend to be very short). The loader also supports randomization to add
 greater variability to speech responses.
 
-.. autoclass:: flask_onsei.templating.YamlLoaderWithRandomization
+.. autoclass:: flask_dialogflow.templating.YamlLoaderWithRandomization
     :members:
 
 
@@ -129,11 +129,11 @@ itself is also available in a ``flask shell`` as ``agent``.
 
 .. _Flask's CLI interface: http://flask.pocoo.org/docs/1.0/cli/
 
-.. autofunction:: flask_onsei.cli.intents
+.. autofunction:: flask_dialogflow.cli.intents
 
-.. autofunction:: flask_onsei.cli.contexts
+.. autofunction:: flask_dialogflow.cli.contexts
 
-.. autofunction:: flask_onsei.cli.integrations
+.. autofunction:: flask_dialogflow.cli.integrations
 
 
 Test helper
@@ -146,9 +146,9 @@ method, which simulates an end-to-end request through the agent. See also
 
 .. _Testing Flask Applications: http://flask.pocoo.org/docs/1.0/testing/
 
-.. autofunction:: flask_onsei.agent.build_webhook_request
+.. autofunction:: flask_dialogflow.agent.build_webhook_request
 
-.. autoclass:: flask_onsei.agent.TestWebhookResponse
+.. autoclass:: flask_dialogflow.agent.TestWebhookResponse
     :members:
 
 

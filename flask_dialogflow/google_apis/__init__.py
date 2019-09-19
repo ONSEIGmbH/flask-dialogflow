@@ -19,7 +19,7 @@ from marshmallow.fields import (
 )
 from marshmallow_enum import EnumField
 
-from flask_onsei.json import (
+from flask_dialogflow.json import (
     ModuleLocalNested, JSONType, JSONTypeSchema
 )
 
@@ -56,5 +56,5 @@ class GoogleType(JSONType, schema=GoogleTypeSchema):
 
 
 def import_dialogflow_api(version: str) -> ModuleType:
-    import_path = f'flask_onsei.google_apis.dialogflow_{version}'
+    import_path = f'flask_dialogflow.google_apis.dialogflow_{version}'
     return import_module(import_path)

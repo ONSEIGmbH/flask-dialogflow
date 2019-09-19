@@ -14,8 +14,8 @@ from typing import Iterable, Type
 
 import pytest
 
-from flask_onsei.agent import DIALOGFLOW_VERSIONS
-from flask_onsei.google_apis import (
+from flask_dialogflow.agent import DIALOGFLOW_VERSIONS
+from flask_dialogflow.google_apis import (
     JSONType,
     JSONTypeSchema,
     actions_on_google_v2,
@@ -23,7 +23,7 @@ from flask_onsei.google_apis import (
     dialogflow_v2beta1,
     import_dialogflow_api
 )
-from flask_onsei.utils import fqn
+from flask_dialogflow.utils import fqn
 
 
 def generate_module_classes(module: ModuleType) -> Iterable[Type]:
@@ -106,7 +106,7 @@ def _type_field_names(api_type: JSONType) -> Iterable[str]:
 
 @pytest.mark.parametrize('version', DIALOGFLOW_VERSIONS)
 def test_import_dialogflow_api(version):
-    mod_name = f'flask_onsei.google_apis.dialogflow_{version}'
+    mod_name = f'flask_dialogflow.google_apis.dialogflow_{version}'
     mod = import_dialogflow_api(version)
     assert isinstance(mod, ModuleType)
     assert mod.__name__ == mod_name

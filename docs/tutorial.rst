@@ -15,7 +15,7 @@ virtualenv:
     cd my_project
     virtualenv venv
     source venv/bin/activate
-    pip install flask_onsei
+    pip install flask_dialogflow
 
 A Flask app can be initialized with a :class:`.DialogflowAgent` in two ways.
 One way is to pass the Flask instance directly to the init method:
@@ -59,19 +59,19 @@ Both can be configured in the init method:
         route='/agent', templates_file='agent/templates.yaml'
     )
 
-flask_onsei currently supports two versions of the Dialogflow API: ``v2`` and
+flask_dialogflow currently supports two versions of the Dialogflow API: ``v2`` and
 ``v2beta1``. The latter is, despite its name, a superset of the former and
 therefore set as the default version. This means that the conversation objects
 will be of type :class:`.V2beta1DialogflowConversation` and that API objects such
 as Cards and Images should be imported from the
-:py:mod:`flask_onsei.google_apis.dialogflow_v2beta1` module.
+:py:mod:`flask_dialogflow.google_apis.dialogflow_v2beta1` module.
 
 While it is possible to change the version to ``v2`` there is not much point to
 this as the difference is minuscule. This option exists mostly to make the
 library forward compatible with future Dialogflow versions.
 
 The DialogflowAgent has a debug mode that can be activate via the ``debug`` init
-param or the ``flask_onsei_DEBUG`` environment variable. It causes all webhook
+param or the ``flask_dialogflow_DEBUG`` environment variable. It causes all webhook
 requests and responses to be logged to the console (prettified).
 
 Google APIs and serialization
@@ -85,9 +85,9 @@ process is hidden behind ``from_json``/``to_json`` methods on the classes. These
 classes implement the entire Dialogflow (v2, v2beta1) and Actions on Google API
 in three modules:
 
-    * :mod:`flask_onsei.google_apis.actions_on_google_v2`
-    * :mod:`flask_onsei.google_apis.dialogflow_v2`
-    * :mod:`flask_onsei.google_apis.dialogflow_v2beta1`
+    * :mod:`flask_dialogflow.google_apis.actions_on_google_v2`
+    * :mod:`flask_dialogflow.google_apis.dialogflow_v2`
+    * :mod:`flask_dialogflow.google_apis.dialogflow_v2beta1`
 
 Here is an example of how it works:
 
@@ -95,7 +95,7 @@ Here is an example of how it works:
 
 .. code-block:: python
 
-    from flask_onsei.google_apis.dialogflow_v2beta1 import Image
+    from flask_dialogflow.google_apis.dialogflow_v2beta1 import Image
 
     # Deserialization from JSON
     Image.from_json(
@@ -187,7 +187,7 @@ They also offer methods to build responses:
     conv.tell(render_template('hello'))
 
     # Showing a card
-    from flask_onsei.google_apis.dialogflow_v2beta1 import Card
+    from flask_dialogflow.google_apis.dialogflow_v2beta1 import Card
     card = Card(title='Beautiful image', image_uri='image.png')
     conv.show_card(card)
 
@@ -246,7 +246,7 @@ Dialogflow API and watch the Dialogflow logs for errors.
 Templating
 ----------
 
-flask_onsei uses the `Jinja2`_ templating library just like Flask itself, but
+flask_dialogflow uses the `Jinja2`_ templating library just like Flask itself, but
 adds two features to make it work better for voice assistants.
 
 .. _Jinja2: http://jinja.pocoo.org/docs/2.10
@@ -277,7 +277,7 @@ alias the ``render_template`` function:
 
 The second feature that we add is randomization. For voice assistants it is
 typically desirable to vary each speech response somewhat so as not to sound
-robotic. flask_onsei makes this simple by supporting randomization out of the
+robotic. flask_dialogflow makes this simple by supporting randomization out of the
 box. It can be used by using arrays of different formulations for one template
 in the templates file:
 
@@ -328,7 +328,7 @@ Checking if a context is present:
     # Or shorter:
     'some_ctx' in conv.contexts
 
-Getting a context, returning a :class:`flask_onsei.context.Context` instance:
+Getting a context, returning a :class:`flask_dialogflow.context.Context` instance:
 
 .. code-block:: python
 
@@ -351,7 +351,7 @@ Setting a context:
     conv.contexts.set('some_ctx', lifespan_count=3, some_param='some_value')
 
     # Initializing a complex context up front and setting it:
-    from flask_onsei.context import Context
+    from flask_dialogflow.context import Context
     ctx = Context(
         'some_ctx',
         lifespan_count=3,
@@ -417,7 +417,7 @@ to implement a GameState context for a quiz game:
 
     # Implement the game state class and schema
     from marshmallow.fields import Int, Str
-    from flask_onsei.json import JSONType, JSONTypeSchema
+    from flask_dialogflow.json import JSONType, JSONTypeSchema
 
     class _GameStateSchema(JSONTypeSchema):
         questions_answered = Int()
@@ -455,7 +455,7 @@ number of different platforms. The most well-known of the is Actions on Google
 It is also possible to integrate Dialogflow with custom platforms such as
 proprietary chat platforms or third party smart speakers.
 
-flask_onsei supports all of these use cases. There is extensive support for
+flask_dialogflow supports all of these use cases. There is extensive support for
 `Actions on Google`_ (see below), basic support for the other
 integrations and tools to build helpers for custom integrations.
 
@@ -496,7 +496,7 @@ this functionality and to register it on the agent.
 
 .. code-block:: python
 
-    from flask_onsei.integrations import GenericIntegrationConversation
+    from flask_dialogflow.integrations import GenericIntegrationConversation
 
     class BlinkingLightSpeakerConv(GenericIntegrationConversation):
         # Subclass the generic conv to get the usual dict behavior
@@ -531,7 +531,7 @@ make this info available like this:
 
 .. code-block:: python
 
-    from flask_onsei.integrations import GenericIntegrationConversation
+    from flask_dialogflow.integrations import GenericIntegrationConversation
 
     @agent.integration('blink_speaker')
     class BlinkingLightSpeakerConv(GenericIntegrationConversation):
@@ -601,7 +601,7 @@ implemented as methods on the AoG conversation object and are typically named
     conv.google.ask_for_sign_in('To access your Tinder account')
 
     # Ask for a selection from a list
-    from flask_onsei.google_apis.actions_on_google_v2 import ListSelect
+    from flask_dialogflow.google_apis.actions_on_google_v2 import ListSelect
     list_select = ListSelect(...)  # Build the ListSelect
     conv.google.ask_for_list_selection(list_select)
 

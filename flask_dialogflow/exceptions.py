@@ -9,11 +9,11 @@
 import inspect
 from typing import Type, Optional, TYPE_CHECKING
 
-from flask_onsei.json import JSONType
+from flask_dialogflow.json import JSONType
 
 if TYPE_CHECKING:  # pragma: no cover
-    from flask_onsei.agent import ConversationHandler
-    from flask_onsei.integrations import AbstractIntegrationConversation
+    from flask_dialogflow.agent import ConversationHandler
+    from flask_dialogflow.integrations import AbstractIntegrationConversation
 
 
 class DialogflowAgentError(Exception):

@@ -14,7 +14,7 @@ from enum import Enum
 from functools import partial
 from typing import Optional, Any, Dict, List
 
-from flask_onsei.google_apis import (
+from flask_dialogflow.google_apis import (
     GoogleType,
     GoogleTypeSchema,
     Str,

@@ -11,7 +11,7 @@ from datetime import datetime, timedelta, timezone
 
 import pytest
 
-from flask_onsei.google_apis.actions_on_google_v2 import (
+from flask_dialogflow.google_apis.actions_on_google_v2 import (
     User,
     UserProfile,
     AppRequest,
@@ -31,12 +31,12 @@ from flask_onsei.google_apis.actions_on_google_v2 import (
     PaymentOptions,
     PresentationOptions,
 )
-from flask_onsei.integrations.actions_on_google import (
+from flask_dialogflow.integrations.actions_on_google import (
     UserFacade,
     V2ActionsOnGoogleDialogflowConversation,
     ssmlify,
 )
-from flask_onsei.json import JSON
+from flask_dialogflow.json import JSON
 
 
 class TestUserFacade:

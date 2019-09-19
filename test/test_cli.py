@@ -6,7 +6,7 @@
     :copyright: (c) 2018 ONSEI GmbH
     :license: Proprietary
 """
-from flask_onsei.cli import intents, contexts, integrations
+from flask_dialogflow.cli import intents, contexts, integrations
 
 import pytest
 

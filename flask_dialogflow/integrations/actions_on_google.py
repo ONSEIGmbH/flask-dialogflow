@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    flask_onsei.integrations.actions_on_google
+    flask_dialogflow.integrations.actions_on_google
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     The integration conversation class for the Actions-on-Google integration.
@@ -20,7 +20,7 @@ from typing import (
     Generic,
 )
 
-from flask_onsei.google_apis.actions_on_google_v2 import (
+from flask_dialogflow.google_apis.actions_on_google_v2 import (
     Suggestion,
     UserProfile,
     AppRequest,
@@ -65,8 +65,8 @@ from flask_onsei.google_apis.actions_on_google_v2 import (
     Image,
     PackageEntitlement,
 )
-from flask_onsei.integrations import AbstractIntegrationConversation
-from flask_onsei.json import JSON
+from flask_dialogflow.integrations import AbstractIntegrationConversation
+from flask_dialogflow.json import JSON
 
 
 T = TypeVar('T')

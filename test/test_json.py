@@ -12,7 +12,7 @@ from typing import Optional
 import pytest
 from marshmallow import Schema, fields
 
-from flask_onsei.json import JSONType, JSONTypeSchema, ModuleLocalNested
+from flask_dialogflow.json import JSONType, JSONTypeSchema, ModuleLocalNested
 
 
 @pytest.fixture

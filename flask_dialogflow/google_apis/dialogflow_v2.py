@@ -14,7 +14,7 @@ from typing import Optional, Any, Dict, List
 
 from dataclasses import dataclass, field
 
-from flask_onsei.google_apis import (
+from flask_dialogflow.google_apis import (
     GoogleType,
     GoogleTypeSchema,
     Str,

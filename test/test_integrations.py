@@ -8,9 +8,9 @@
 """
 import pytest
 
-from flask_onsei.exceptions import AmbiguousIntegrationError
-from flask_onsei.google_apis.dialogflow_v2 import OriginalDetectIntentRequest
-from flask_onsei.integrations import (
+from flask_dialogflow.exceptions import AmbiguousIntegrationError
+from flask_dialogflow.google_apis.dialogflow_v2 import OriginalDetectIntentRequest
+from flask_dialogflow.integrations import (
     AbstractIntegrationConversation,
     GenericIntegrationConversation,
     IntegrationRegistry

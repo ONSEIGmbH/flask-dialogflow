@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    flask_onsei
+    flask_dialogflow
     ~~~~~~~~~~~~
 
     :copyright: (c) 2018 ONSEI GmbH
