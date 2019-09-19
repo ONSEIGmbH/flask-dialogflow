@@ -89,39 +89,6 @@ WebhookResponse = Union[
 ]
 
 
-def remove_output_contexts(data):
-    new_list = []
-    for x in data:
-        if "lifespanCount" in x and x['lifespanCount'] < 10:
-            new_list.append(x)
-        elif "lifespanCount" not in x:
-            new_list.append(x)
-    return new_list
-
-
-def remove_none_val_from_dict(data):
-    for key, value in dict(data).items():
-        # print(key)
-        # if key == 'ssml':
-        #     data['textToSpeech'] = data.pop('ssml')
-        if value is None:
-            del data[key]
-        elif type(value) is dict:
-            # print("Checking Dict: " + str(key))
-            data[key] = remove_none_val_from_dict(value)
-        elif type(value) is list and len(value) == 0:
-            # print("Removing List: " + str(key))
-            del data[key]
-        elif type(value) is list:
-            # print("Checking List: " + str(key))
-            tmp_list = []
-            for x in value:
-                if type(x) is dict:
-                    x = remove_none_val_from_dict(x)
-                    tmp_list.append(x)
-            data[key] = tmp_list
-    return data
-
 def _validate_dialogflow_version(version: str) -> None:
     if version not in DIALOGFLOW_VERSIONS:
         raise ValueError(
@@ -151,9 +118,9 @@ class DialogflowAgent:
             `templating`_ for details. The path must be relative to the Flask
             apps root_path.
         debug: Debug mode for the agent. If on, every request and response will
-            be logged as prettified JSON. Can be set via the flask_dialogflow_DEBUG
+            be logged as prettified JSON. Can be set via the ONSEI_GOOGLE_DEBUG
             environment variable.
-        aog_flask_dialogflow_default_factory: The default factory to use for the
+        aog_user_storage_default_factory: The default factory to use for the
             user_storage of the AoG integration.
         aog_user_storage_deserializer: The function to deserialize the
             user_storage of the AoG integration.
@@ -190,7 +157,7 @@ class DialogflowAgent:
         self.route = route
         self.templates_file = templates_file
 
-        self.debug = debug or os.getenv('flask_dialogflow_DEBUG')
+        self.debug = debug or os.getenv('ONSEI_GOOGLE_DEBUG')
         self.logger = logging.getLogger('dialogflow.agent')
         self.logger.addHandler(_create_default_handler())
         if self.debug:
@@ -630,8 +597,6 @@ class DialogflowAgent:
         webhook_request = self._df.WebhookRequest.from_json(request_payload)
         webhook_response = self._handle_request(webhook_request)
         response_body = webhook_response.to_json()
-        response_body = remove_none_val_from_dict(response_body)
-        response_body['outputContexts'] = remove_output_contexts(response_body['outputContexts'])
         self._log_json(response_body)
         return jsonify(response_body)
 

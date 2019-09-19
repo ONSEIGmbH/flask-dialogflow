@@ -27,7 +27,7 @@ class V2DialogflowConversation:
     This object is the heart of this library. It represents a single turn in a
     Dialogflow conversation and is the interface to both the incomint request
     data as well as to the response construction methods. This object is
-    instantiated by flask_dialogflow automatically and then passed to the handler
+    instantiated by ONSEI_Google automatically and then passed to the handler
     function matched to this request. The handler function will usually
     inspect the request data in more detail, perform some business logic,
     maybe update the server-side state (contexts, user storage) and then build
