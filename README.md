@@ -30,4 +30,4 @@ def hello_world(conv):
     return conv
 ```
 
-For more information, check out the Tutorial and the API documentation.
+For more information, check out the Tutorial and the API [documentation](https://flask-dialogflow.readthedocs.io/en/latest/).
