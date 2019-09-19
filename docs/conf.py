@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath('.')))
 
 project = 'flask_dialogflow'
 copyright = '2019, ONSEI GmbH'
-author = 'Georg Molau'
+author = 'Jochen Emig'
 
 # The full version, including alpha/beta/rc tags
 release = 'v2.0.0'
