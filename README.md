@@ -1,6 +1,7 @@
-# flask_dialogflow
+# Flask Dialogflow
+[![Build Status](https://travis-ci.com/ONSEIGmbH/flask-dialogflow.svg?branch=master)](https://travis-ci.com/ONSEIGmbH/flask-dialogflow)
 
-flask_dialogflow is a Flask extension to build [Dialogflow](https://dialogflow.com/)
+Flask Dialogflow is a Flask extension to build [Dialogflow](https://dialogflow.com/)
 agents. It aims to shine through the following features:
 
 * A familiar Flask extension structure that handles the mundane stuff behind
