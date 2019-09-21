@@ -16,7 +16,7 @@ setup(
     packages=find_packages(),
     url='https://github.com/ONSEIGmbH/flask-ONSEI',
     python_requires='>3.6',
-    license='Proprietary',
+    license='APACHE LICENSE, VERSION 2.0',
     author='ONSEI GmbH',
     author_email='it@onsei.de',
     description='A helper library for Actions-on-Google/Dialogflow agents.',
