@@ -233,10 +233,11 @@ class IntegrationRegistry:
             odir.payload, **kwargs
         )
         for other_key in (set(self._integrations) - set(key)):
-            cls, kwargs = self._integrations[other_key]
-            integrations[other_key[0]] = cls.from_webhook_request_payload(
-                **kwargs
-            )
+            if other_key != key:
+                cls, kwargs = self._integrations[other_key]
+                integrations[other_key[0]] = cls.from_webhook_request_payload(
+                    **kwargs
+                )
         return integrations
 
     def list_entries(self) -> Iterable[IntegrationRegistryEntry]:

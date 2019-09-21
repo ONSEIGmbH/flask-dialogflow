@@ -7,4 +7,4 @@
     :license: Proprietary
 """
 
-__version__ = '2.0.0-alpha'  # pylint: disable=invalid-name
+__version__ = '2.0.1'  # pylint: disable=invalid-name
