@@ -757,12 +757,17 @@ class V2ActionsOnGoogleDialogflowConversation(
         Returns:
             A dict with the necessary response data.
         """
-        return {
-            'userStorage': self._user._serialize_user_storage(),
-            'expectUserResponse': self._expect_user_response,
-            'richResponse': self._rich_response.to_json(),
-            'systemIntent': self._system_intent,
-        }
+        response = dict()
+
+        if self._user._serialize_user_storage() is not None:
+            response['userStorage'] = self._user._serialize_user_storage()
+        if self._expect_user_response is not None:
+            response['expectUserResponse'] = self._expect_user_response
+        if self._rich_response.to_json()is not None:
+            response['richResponse'] = self._rich_response.to_json()
+        if self._system_intent is not None:
+            response['systemIntent'] = self._system_intent
+        return response
 
 
 def ssmlify(text: str) -> str:
