@@ -9,7 +9,7 @@
 from dataclasses import dataclass
 from typing import Type, Optional, MutableMapping, Any, Union
 
-from marshmallow import post_load, Schema, EXCLUDE
+from marshmallow import post_load, Schema, EXCLUDE, post_dump
 from marshmallow.fields import Nested
 
 
@@ -149,6 +149,18 @@ class JSONTypeSchema(Schema):
         if not callable(self.__class__.__marshmallow_object_class__):
             return data
         return self.__class__.__marshmallow_object_class__(**data)
+
+    @post_dump
+    def remove_skip_values(self, data):
+        data_copy = data.copy()
+        for key, value in data_copy.items():
+            if value is None:
+                del data[key]
+            elif type(value) is list and len(value) == 0:
+                del data[key]
+            elif type(value) is dict and len(value) == 0:
+                del data[key]
+        return data
 
 
 class ModuleLocalNested(Nested):
