@@ -26,7 +26,7 @@ agent = DialogflowAgent(app)
 
 @agent.handle(intent='HelloWorld')
 def hello_world(conv):
-    conv.ask('Hello world!')
+    conv.google.ask('Hello world!')
     return conv
 ```
 
