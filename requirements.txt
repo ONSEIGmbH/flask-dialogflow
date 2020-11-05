@@ -33,8 +33,8 @@ jedi==0.13.3
 Jinja2==2.10.1
 lazy-object-proxy==1.3.1
 MarkupSafe==1.1.1
-marshmallow==3.0.0rc5
-marshmallow-enum==1.4.1
+marshmallow
+marshmallow-enum
 mccabe==0.6.1
 more-itertools==7.0.0
 mypy==0.711
