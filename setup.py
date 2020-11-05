@@ -23,9 +23,8 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     install_requires=[
-        'dataclasses==0.6;python_version<"3.7"',
+        'dataclasses==0.6;python_version<"3.9"',
         'Flask==1.0.2',
-        'marshmallow[reco]==3.0.0rc5',  # Marshmallow with recommended deps
         'marshmallow-enum==1.4.1',
         'PyYAML==5.1',
         'tabulate==0.8.3',
