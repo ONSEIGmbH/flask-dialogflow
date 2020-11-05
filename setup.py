@@ -23,7 +23,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     install_requires=[
-        'dataclasses==0.8.0;python_version<"3.9"',
+        'dataclasses==0.6.0;python_version<"3.9"',
         'Flask==1.0.2',
         'marshmallow-enum==1.4.1',
         'PyYAML==5.1',
