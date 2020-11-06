@@ -23,7 +23,6 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     install_requires=[
-        'dataclasses==0.6.0;python_version<"3.7"',
         'Flask==1.0.2',
         'marshmallow_enum @ git+https://github.com/big-picture/marshmallow_enum.git@master#egg=marshmallow_enum',
         'PyYAML==5.1',
