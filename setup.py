@@ -26,7 +26,7 @@ setup(
         'dataclasses==0.6.0;python_version<"3.9"',
         'Flask==1.0.2',
         'marshmallow==3.0.0rc5',
-        'marshmallow_enum @ git+ssh://git@github.com/big-picture/marshmallow_enum@master#egg=marshmallow_enum',
+        'marshmallow_enum @ git+https://github.com/big-picture/marshmallow_enum.git@master#egg=marshmallow_enum',
         'PyYAML==5.1',
         'tabulate==0.8.3',
     ],
