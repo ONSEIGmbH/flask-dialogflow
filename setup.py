@@ -12,7 +12,7 @@ with open('README.md') as fp:
 
 setup(
     name='flask-dialogflow',
-    version=__version__,
+    version='2.0.2',
     packages=find_packages(),
     url='https://github.com/ONSEIGmbH/flask-ONSEI',
     python_requires='>3.6',
