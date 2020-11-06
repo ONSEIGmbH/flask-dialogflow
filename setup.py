@@ -26,7 +26,7 @@ setup(
         'dataclasses==0.6.0;python_version<"3.9"',
         'Flask==1.0.2',
         'marshmallow==3.9.0',
-        'marshmallow-enum==1.5',
+        'marshmallow-enum==1.5.1',
         'PyYAML==5.1',
         'tabulate==0.8.3',
     ],
