@@ -244,11 +244,11 @@ class ContextManager(Collection):
         else:
             name = display_name_or_ctx_instance
             ctx = Context(name, lifespan_count, parameters)
-        if not _is_valid_ctx_display_name(name):
-            raise ValueError(
-                f'Invalid context name, must match this pattern: '
-                f'{VALID_DISPLAY_NAME_PATTERN}'
-            )
+        #if not _is_valid_ctx_display_name(name):
+        #    raise ValueError(
+        #        f'Invalid context name, must match this pattern: '
+        #        f'{VALID_DISPLAY_NAME_PATTERN}'
+        #    )
         if not _is_full_ctx_name(ctx.name):
             ctx.name = make_full_ctx_name(self.session, ctx.name)
         self._active_contexts[name] = ctx
