@@ -27,7 +27,7 @@ setup(
         'Flask==1.0.2',
         'marshmallow[reco]==3.0.0rc5',  # Marshmallow with recommended deps
         'marshmallow-enum==1.4.1',
-        'PyYAML==5.1',
+        'PyYAML==5.4',
         'tabulate==0.8.3',
     ],
     entry_points={
