@@ -25,7 +25,7 @@ setup(
     install_requires=[
         'Flask==1.0.2',
         'marshmallow_enum @ git+https://github.com/big-picture/marshmallow_enum.git@master#egg=marshmallow_enum',
-        'PyYAML==5.1',
+        'PyYAML==6.0',
         'tabulate==0.8.3',
     ],
     entry_points={
