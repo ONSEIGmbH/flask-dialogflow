@@ -12,7 +12,7 @@ with open('README.md') as fp:
 
 setup(
     name='flask-dialogflow',
-    version=__version__,
+    version='2.0.2',
     packages=find_packages(),
     url='https://github.com/ONSEIGmbH/flask-ONSEI',
     python_requires='>3.6',
@@ -23,10 +23,9 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     install_requires=[
-        'dataclasses==0.6;python_version<"3.9"',
         'Flask==1.0.2',
-        'marshmallow-enum==1.4.1',
-        'PyYAML==5.1',
+        'marshmallow_enum @ git+https://github.com/big-picture/marshmallow_enum.git@master#egg=marshmallow_enum',
+        'PyYAML==6.0',
         'tabulate==0.8.3',
     ],
     entry_points={
