@@ -352,7 +352,7 @@ class ContextManager(Collection):
 
 
 # Source for the pattern is the Dialogflow Discovery File.
-VALID_DISPLAY_NAME_PATTERN = re.compile(r'[a-zA-Z0-9_\-%]+')
+VALID_DISPLAY_NAME_PATTERN = re.compile(r'[a-zA-Z0-9_\-%.]+')
 # This does not validate the display name as this would be trying to do two
 # things at once.
 FULL_CTX_NAME_PATTERN = re.compile(
