@@ -24,7 +24,7 @@ idna==2.8
 imagesize==1.1.0
 importlib-metadata==0.18
 ipdb==0.12
-ipython==7.5.0
+ipython==8.10.0
 ipython-genutils==0.2.0
 iso8601==0.1.12
 isort==4.3.17
